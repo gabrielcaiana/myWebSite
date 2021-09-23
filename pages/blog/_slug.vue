@@ -3,7 +3,7 @@
     <h1 v-text="article.title"></h1>
     <p v-text="article.description"></p>
     <img :src="article.img" :alt="article.alt" />
-    <p>Post last update: {{ formartDate(article.updatedAt) }}</p>
+    <p>Post last update: {{ formatDate(article.updatedAt) }}</p>
 
     <nav>
       <ul>
@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import { formartDate } from '@/utils'
+import { formatDate } from '@/utils'
 export default {
   async asyncData({ $content, params }) {
     const article = await $content('articles', params.slug).fetch()
@@ -41,7 +41,7 @@ export default {
   },
 
   methods: {
-    formartDate,
+    formatDate,
   },
 }
 </script>
