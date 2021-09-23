@@ -8,7 +8,11 @@
     <nav>
       <ul>
         <li v-for="link of article.toc" :key="link.id">
-          <nuxt-link :to="`#${link.id}`" v-text="link.text"></nuxt-link>
+          <nuxt-link
+            :class="{ 'py-2': link.depth === 2, 'ml-2 pb-2': link.depth === 3 }"
+            :to="`#${link.id}`"
+            v-text="link.text"
+          ></nuxt-link>
         </li>
       </ul>
     </nav>
