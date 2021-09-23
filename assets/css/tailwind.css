@@ -11,10 +11,12 @@
     @apply py-8;
   }
   h2 {
-    @apply text-3xl;
+    @apply text-2xl;
+    @apply py-4;
   }
   h3 {
-    @apply text-2xl;
+    @apply text-xl;
+    @apply py-4;
   }
   p {
     @apply mb-5;

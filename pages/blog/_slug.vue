@@ -5,6 +5,14 @@
     <img :src="article.img" :alt="article.alt" />
     <p>Post last update: {{ formartDate(article.updatedAt) }}</p>
 
+    <nav>
+      <ul>
+        <li v-for="link of article.toc" :key="link.id">
+          <nuxt-link :to="`#${link.id}`" v-text="link.text"></nuxt-link>
+        </li>
+      </ul>
+    </nav>
+
     <nuxt-content :document="article" />
   </article>
 </template>
@@ -24,4 +32,11 @@ export default {
 </script>
 
 <style lang="css">
+.icon.icon-link {
+  background-image: url('@/assets/icons/icon-hashtag.svg');
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+}
 </style>
