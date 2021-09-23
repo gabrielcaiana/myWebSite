@@ -16,7 +16,7 @@ export default {
     ]
   },
 
-  css: ['@/assets/css/tailwind.css'],
+  css: ['@/assets/css/tailwind.css', '@/assets/css/slug.css', '@/assets/css/base.css'],
 
   content: {
     nestedProperties: ['author.name'],
