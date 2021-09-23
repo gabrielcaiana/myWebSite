@@ -21,6 +21,7 @@
 <script>
 import { formatDate } from '@/utils'
   export default {
+    layout: 'blog',
     async asyncData({ $content, params }) {
       const articles = await $content('articles', params.slug)
         .where({

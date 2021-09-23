@@ -1,6 +1,5 @@
 <template>
   <div>
-    <AppSearchInput />
     <h1 class="font-bold text-4xl">Blog Posts</h1>
     <ul class="flex flex-wrap">
       <li
@@ -56,6 +55,7 @@
 
 <script>
 export default {
+  layout: 'blog',
   async asyncData({ $content, params }) {
     const articles = await $content('articles')
       .only(['title', 'description', 'img', 'slug', 'author'])
