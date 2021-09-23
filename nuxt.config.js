@@ -19,6 +19,7 @@ export default {
   css: ['@/assets/css/tailwind.css'],
 
   content: {
+    nestedProperties: ['author.name'],
     markdown: {
       prism: {
         theme: 'prism-themes/themes/prism-holi-theme.css'
