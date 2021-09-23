@@ -3,6 +3,10 @@ title: My first Blog Post
 description: Learning how to use @nuxt/content to create a blog
 img: first-blog-post.jpg
 alt: my first blog post
+author:
+  name: Gabriel Caiana
+  bio: I`m front-end developer.
+  image: https://avatars.githubusercontent.com/u/26663338?s=400&u=e321e0c5469481f868a741ef2eec2b0b5a65b398&v=4
 ---
 
 ## What is Lorem Ipsum?
