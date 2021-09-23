@@ -22,7 +22,7 @@ export default {
   plugins: [
   ],
 
-  components: true,
+  components: [{ path: '@/components', pathPrefix: false }],
 
   buildModules: [
     '@nuxtjs/eslint-module',
@@ -30,6 +30,7 @@ export default {
 
   modules: [
     '@nuxtjs/axios',
+    '@nuxt/content'
   ],
 
   axios: {},
