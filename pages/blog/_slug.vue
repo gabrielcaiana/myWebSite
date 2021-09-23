@@ -1,7 +1,11 @@
 <template>
-  <article>
-    <nuxt-content :document="article" />
+  <article class="p-5">
+    <h1 v-text="article.title"></h1>
+    <p v-text="article.description"></p>
+    <img :src="article.img" :alt="article.alt" />
     <p>Post last update: {{ formartDate(article.updatedAt) }}</p>
+
+    <nuxt-content :document="article" />
   </article>
 </template>
 
@@ -19,4 +23,5 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="css">
+</style>
