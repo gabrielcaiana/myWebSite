@@ -18,8 +18,15 @@ export default {
 
   css: ['@/assets/css/tailwind.css'],
 
-  plugins: [
-  ],
+  plugins: ['@/plugins/prism'],
+
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-holi-theme.css'
+      }
+    }
+  },
 
   components: [{ path: '@/components', pathPrefix: false }],
 

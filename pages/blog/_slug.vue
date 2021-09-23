@@ -25,10 +25,15 @@
 
 <script>
 import { formartDate } from '@/utils'
+import Prism from '~/plugins/prism'
 export default {
   async asyncData({ $content, params }) {
     const article = await $content('articles', params.slug).fetch()
     return { article }
+  },
+
+  mounted() {
+    Prism.highlightAll()
   },
 
   methods: {
