@@ -18,8 +18,6 @@ export default {
 
   css: ['@/assets/css/tailwind.css'],
 
-  plugins: ['@/plugins/prism'],
-
   content: {
     markdown: {
       prism: {
