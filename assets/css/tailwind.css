@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-mono;
+  }
+  h1 {
+    @apply text-4xl;
+    @apply py-8;
+  }
+  h2 {
+    @apply text-3xl;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+  p {
+    @apply mb-5;
+    @pply text-base;
+  }
+}
