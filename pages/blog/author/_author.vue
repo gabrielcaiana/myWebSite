@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { formatDate } from '@/utils'
+import { formatDate } from '@/utils/date'
 export default {
   async asyncData({ $content, params }) {
     const articles = await $content('articles', params.slug)

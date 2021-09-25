@@ -1,7 +1,10 @@
+import getRoutes from "./utils/getRoutes.js";
+
 export default {
   target: 'static',
   head: {
     title: 'myBlog',
+    auhtor: 'Gabriel Caiana Guedes',
     htmlAttrs: {
       lang: 'en'
     },
@@ -36,11 +39,20 @@ export default {
   modules: [
     '@nuxtjs/axios',
     '@nuxt/content',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/dotenv',
+    "@nuxtjs/sitemap"
   ],
 
   axios: {},
 
   build: {
-  }
+  },
+
+  sitemap: {
+    hostname: process.env.NODE_ENV === "production" ? process.env.BASE_URL : 'http://localhost:3000'
+  },
+  routes() {
+    return getRoutes();
+  },
 }
