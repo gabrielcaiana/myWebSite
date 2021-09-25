@@ -84,7 +84,7 @@ export default {
       title: this.article.title,
       description: this.article.description,
       url: `${this.$config.baseUrl}/blog/${this.$route.params.slug}`,
-      mainImage: this.article.image,
+      mainImage: this.article.img,
     };
     return getSiteMeta(metaData);
   }
