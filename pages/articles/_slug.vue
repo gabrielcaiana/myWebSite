@@ -71,7 +71,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `https://gabrielcaiana.netlify.app/blog/${this.$route.params.slug}`,
+          href: `https://gabrielcaiana.netlify.app/articles/${this.$route.params.slug}`,
         },
       ],
     }
@@ -83,7 +83,7 @@ export default {
       type: "article",
       title: this.article.title,
       description: this.article.description,
-      url: `${this.$config.baseUrl}/blog/${this.$route.params.slug}`,
+      url: `${this.$config.baseUrl}/articles/${this.$route.params.slug}`,
       mainImage: this.article.img,
     };
     return getSiteMeta(metaData);

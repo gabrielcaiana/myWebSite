@@ -10,7 +10,7 @@
         development with a focus on usability and accessibility, in addition to
         providing a good experience for users.
       </p>
-      <nuxt-link to="blog" class="rounded-lg p-5 text-white bg-blue-500"
+      <nuxt-link to="articles" class="rounded-lg p-5 text-white bg-blue-500"
         >Read my blog</nuxt-link
       >
     </div>

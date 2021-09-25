@@ -5,7 +5,7 @@
       <ul class="flex">
         <AppSearchInput />
 
-        <li class="pl-3" v-for="(item, index) in items" :key="index">
+        <li v-for="(item, index) in items" :key="index" class="pl-3">
           <nuxt-link :to="item.path" v-text="item.title"></nuxt-link>
         </li>
       </ul>
@@ -21,7 +21,7 @@ export default {
         { title: 'Home', path: '/' },
         { title: 'About', path: '/about' },
         { title: 'Projects', path: '/projects' },
-        { title: 'Blog', path: '/blog' },
+        { title: 'Blog', path: '/articles' },
       ],
     }
   },
