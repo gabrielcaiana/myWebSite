@@ -1,58 +1,85 @@
-import getRoutes from "./utils/getRoutes.js";
+import getRoutes from './utils/getRoutes.js'
+
+import getSiteMeta from "./utils/getSiteMeta";
+
+const meta = getSiteMeta();
 
 export default {
   target: 'static',
   head: {
-    title: 'myBlog',
+    title: 'welcome to my personal website',
     auhtor: 'Gabriel Caiana Guedes',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'en',
     },
+    link: [
+      {
+        hid: 'canonical',
+        rel: 'canonical',
+        href: process.env.BASE_URL,
+      },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    ],
     meta: [
+      ...meta,
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+
+      { property: 'og:site_name', content: 'I Love code' },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          "I'm a 24-year-old software developer working primarily with JavaScript | TypeScript | Vue and Nuxt. Passionate about technology, innovation and UX | User interface design.",
+      },
+      { property: 'og:image:width', content: '740' },
+      { property: 'og:image:height', content: '300' },
+
+      { name: 'twitter:site', content: '@gabrielgueedes' },
+      { name: 'twitter:card', content: 'summary_large_image' }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
   },
 
-  css: ['@/assets/css/tailwind.css', '@/assets/css/slug.css', '@/assets/css/base.css'],
+  css: [
+    '@/assets/css/tailwind.css',
+    '@/assets/css/slug.css',
+    '@/assets/css/base.css',
+  ],
 
   content: {
     nestedProperties: ['author.name'],
     markdown: {
       prism: {
-        theme: 'prism-themes/themes/prism-holi-theme.css'
-      }
-    }
+        theme: 'prism-themes/themes/prism-holi-theme.css',
+      },
+    },
   },
 
   components: [{ path: '@/components', pathPrefix: false }],
 
-  buildModules: [
-    '@nuxtjs/eslint-module',
-  ],
+  buildModules: ['@nuxtjs/eslint-module'],
 
   modules: [
     '@nuxtjs/axios',
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/dotenv',
-    "@nuxtjs/sitemap"
+    '@nuxtjs/sitemap',
   ],
 
   axios: {},
 
-  build: {
-  },
+  build: {},
 
   sitemap: {
-    hostname: process.env.NODE_ENV === "production" ? process.env.BASE_URL : 'http://localhost:3000'
+    hostname:
+      process.env.NODE_ENV === 'production'
+        ? process.env.BASE_URL
+        : 'http://localhost:3000',
   },
   routes() {
-    return getRoutes();
+    return getRoutes()
   },
 }
