@@ -11,8 +11,8 @@
           class="md:grid md:gap-4 md:grid-cols-2"
         >
           <img
-            v-if="article.image"
-            :src="article.image"
+            v-if="article.img"
+            :src="article.img"
             alt=""
             class="mb-4 border rounded"
           />
