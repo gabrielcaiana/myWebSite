@@ -3,9 +3,9 @@
     <h1 v-text="article.title"></h1>
     <p v-text="article.description"></p>
     <img :src="article.img" :alt="article.alt" />
-    <p>Post last update: {{ formatDate(article.updatedAt) }}</p>
+    <p class="py-6">Post last update: {{ formatDate(article.updatedAt) }}</p>
 
-    <nav>
+    <nav class="my-6">
       <ul>
         <li v-for="link of article.toc" :key="link.id">
           <nuxt-link

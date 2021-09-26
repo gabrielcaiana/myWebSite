@@ -8,7 +8,7 @@
       >
         <NuxtLink
           :to="{ name: 'articles-slug', params: { slug: article.slug } }"
-          class="md:grid md:gap-4 md:grid-cols-2"
+          class="md:grid md:gap-4 md:grid-cols-2 flex items-center"
         >
           <img
             v-if="article.img"
