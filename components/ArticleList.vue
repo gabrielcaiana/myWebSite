@@ -29,18 +29,14 @@
       </li>
     </ul>
     <div v-if="total" class="constainer mx-auto my-5 max-w-5xl">
-      <Pagination v-if="total > 5" :total="total" />
+      <Pagination v-if="total > 4" :total="total" />
     </div>
   </div>
 </template>
 
 <script>
-import Pagination from '@/components/Pagination'
 export default {
   name: 'ArticleList',
-  components: {
-    Pagination,
-  },
   props: {
     articles: {
       type: Array,

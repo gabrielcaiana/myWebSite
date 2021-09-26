@@ -1,37 +1,41 @@
 <template>
-  <div>
+  <div class="flex">
+    <span v-if="currentPage === 1" :class="disabledStyle"> First </span>
+
     <nuxt-link
-      :to="{
-        name: 'articles-page-page',
-        params: { page: 1 },
-      }"
+      v-else
+      :to="{ name: 'articles-page-page', params: { page: 1 } }"
+      :class="buttonStyles"
     >
       First
     </nuxt-link>
 
+    <span v-if="currentPage === 1" :class="disabledStyle"> Prev </span>
+
     <nuxt-link
-      :to="{
-        name: 'articles-page-page',
-        params: { page: prevPage }
-      }"
+      v-else
+      :to="{ name: 'articles-page-page', params: { page: prevPage } }"
+      :class="buttonStyles"
     >
       Prev
     </nuxt-link>
 
+    <span v-if="currentPage === totalPages" :class="disabledStyle"> Next </span>
+
     <nuxt-link
-      :to="{
-        name: 'articles-page-page',
-        params: { page: nextPage },
-      }"
+      v-else
+      :to="{ name: 'articles-page-page', params: { page: nextPage } }"
+      :class="buttonStyles"
     >
       Next
     </nuxt-link>
 
+    <span v-if="currentPage === totalPages" :class="disabledStyle"> Last </span>
+
     <nuxt-link
-      :to="{
-        name: 'articles-page-page',
-        params: { page: totalPages },
-      }"
+      v-else
+      :to="{ name: 'articles-page-page', params: { page: totalPages } }"
+      :class="buttonStyles"
     >
       Last
     </nuxt-link>
@@ -47,12 +51,12 @@ export default {
     },
     perPage: {
       type: Number,
-      default: 5,
+      default: 4,
     },
   },
   computed: {
     totalPages() {
-      return Math.floor(this.total / this.perPage)
+      return Math.ceil(this.total / this.perPage)
     },
     currentPage() {
       return parseInt(this.$route.params.page) || 1
@@ -64,6 +68,13 @@ export default {
       return this.currentPage < this.totalPages
         ? this.currentPage + 1
         : this.totalPages
+    },
+
+    buttonStyles() {
+      return 'border rounded px-4 py-1 text-sm bg-white flex justify-center items-center sm:uppercase hover:bg-blue-500 hover:text-white transform duration-500 ease-in-out mx-2'
+    },
+    disabledStyle() {
+      return 'border rounded px-4 py-1 text-sm bg-white flex justify-center items-center sm:uppercase text-gray-300 mx-2'
     },
   },
 }
