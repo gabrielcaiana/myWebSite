@@ -13,7 +13,17 @@
         </p>
         <nuxt-link
           to="articles/page"
-          class="rounded-lg p-5 text-white bg-blue-500 mb-10"
+          class="
+            rounded-lg
+            p-5
+            text-white
+            bg-blue-500
+            mb-10
+            hover:bg-blue-700
+            transition
+            duration-300
+            ease-in-out
+          "
           >Read my blog</nuxt-link
         >
       </div>

@@ -1,18 +1,13 @@
 <template>
-  <footer class="bg-black text-white">
-    <div class="container mx-auto p-4 text-center">
-      <small>&copy; {{ new Date().getFullYear() }} {{ Name }}</small>
+  <footer>
+    <div class="container mx-auto p-4 text-center border-t-2">
+      <span>&copy; {{ new Date().getFullYear() }} developed by Gabriel Caiana </span>
     </div>
   </footer>
 </template>
 
 <script>
 export default {
-  name: 'Footer',
-  computed: {
-    Name() {
-      return `developed by Gabriel Caiana`;
-    },
-  },
+  name: 'Footer'
 };
 </script>

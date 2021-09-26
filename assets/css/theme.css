@@ -28,6 +28,3 @@ body {
   color: var(--color) !important;
   transition: background-color 0.3s !important;
 }
-a {
-  color: var(--color-primary) !important;
-}

@@ -21,8 +21,27 @@
               {{ article.title }}
             </h2>
             <p class="text-lg">{{ article.description }}</p>
-            <p class="font-bold text-indigo-600 mt-2">
-              Read more<span class="text-indigo-600">&hellip;</span>
+            <p
+              class="
+                font-bold
+                text-blue-500
+                hover:text-blue-700
+                transition
+                duration-300
+                ease-in-out
+                mt-2
+              "
+            >
+              Read more<span
+                class="
+                  text-blue-500
+                  hover:text-blue-700
+                  transition
+                  duration-300
+                  ease-in-out
+                "
+                >&hellip;</span
+              >
             </p>
           </div>
         </NuxtLink>
