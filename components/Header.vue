@@ -3,8 +3,6 @@
     <div class="container flex justify-between">
       <nuxt-link to="/">Gabriel Caiana</nuxt-link>
       <ul class="flex">
-        <AppSearchInput />
-
         <li v-for="(item, index) in items" :key="index" class="pl-3">
           <nuxt-link :to="item.path" v-text="item.title"></nuxt-link>
         </li>

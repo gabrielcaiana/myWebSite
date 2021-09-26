@@ -1,7 +1,7 @@
 <template>
-  <div class="container mx-auto">
+  <Container>
     <h1>Projects</h1> 
-  </div>
+  </Container>
 </template>
 
 <script>

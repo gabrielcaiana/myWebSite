@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <ul class="text-gray-500 max-w-5xl mt-10 mx-auto">
+  <Container>
+    <ul class="text-gray-500 max-w-5xl mx-auto">
       <li
         v-for="article of articles"
         :key="article.slug"
@@ -31,7 +31,7 @@
     <div v-if="total" class="constainer mx-auto my-5 max-w-5xl">
       <Pagination v-if="total > 4" :total="total" />
     </div>
-  </div>
+  </Container>
 </template>
 
 <script>

@@ -1,15 +1,11 @@
 <template>
-  <div class="container mx-auto">
+  <Container>
     <h1>About me!</h1>
-  </div>
+  </Container>
 </template>
 
 <script>
-  export default {
-    
-  }
+export default {}
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
