@@ -1,7 +1,9 @@
 <template>
   <div>
     <Header />
-    <Nuxt />
+    <transition name="slide" mode="out-in">
+      <Nuxt />
+    </transition>
   </div>
 </template>
 

@@ -57,9 +57,11 @@ export default {
     },
   },
 
+  layoutTransition: 'slide',
+
   components: [{ path: '@/components', pathPrefix: false }],
 
-  buildModules: ['@nuxtjs/eslint-module'],
+  buildModules: ['@nuxtjs/eslint-module', 'nuxt-gsap-module'],
 
   modules: [
     '@nuxtjs/axios',
