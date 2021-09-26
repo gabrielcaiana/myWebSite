@@ -1,5 +1,5 @@
 <template>
-  <article class="p-5">
+  <article class="container mx-auto p-5">
     <h1 v-text="article.title"></h1>
     <p v-text="article.description"></p>
     <img :src="article.img" :alt="article.alt" />

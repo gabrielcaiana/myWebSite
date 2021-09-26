@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ul class="text-gray-500 max-w-5xl mx-auto">
+    <ul class="text-gray-500 max-w-5xl mt-10 mx-auto">
       <li
         v-for="article of articles"
         :key="article.slug"
