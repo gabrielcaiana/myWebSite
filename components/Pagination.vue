@@ -71,10 +71,10 @@ export default {
     },
 
     buttonStyles() {
-      return 'border rounded px-4 py-1 text-sm bg-white flex justify-center items-center sm:uppercase hover:bg-blue-500 hover:text-white transform duration-500 ease-in-out mx-2'
+      return 'border rounded px-4 py-1 text-sm flex justify-center items-center sm:uppercase hover:bg-blue-500 hover:text-white transform duration-500 ease-in-out mx-2'
     },
     disabledStyle() {
-      return 'border rounded px-4 py-1 text-sm bg-white flex justify-center items-center sm:uppercase text-gray-300 mx-2'
+      return 'border rounded px-4 py-1 text-sm flex justify-center items-center sm:uppercase text-gray-300 mx-2'
     },
   },
 }

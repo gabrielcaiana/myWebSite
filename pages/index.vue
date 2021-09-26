@@ -17,6 +17,7 @@
           >Read my blog</nuxt-link
         >
       </div>
+      <ColorModePicker />
     </main>
   </Container>
 </template>

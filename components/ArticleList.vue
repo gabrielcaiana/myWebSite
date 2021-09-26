@@ -1,10 +1,10 @@
 <template>
   <Container>
-    <ul class="text-gray-500 max-w-5xl mx-auto">
+    <ul class="max-w-5xl mx-auto">
       <li
         v-for="article of articles"
         :key="article.slug"
-        class="mb-12 bg-white p-5 rounded shadow"
+        class="mb-12 bg-white bg-opacity-5 p-5 rounded shadow"
       >
         <NuxtLink
           :to="{ name: 'articles-slug', params: { slug: article.slug } }"
@@ -17,7 +17,7 @@
             class="mb-4 border rounded"
           />
           <div>
-            <h2 class="font-bold text-gray-900 text-2xl mb-2">
+            <h2 class="font-bold text-2xl mb-2">
               {{ article.title }}
             </h2>
             <p class="text-lg">{{ article.description }}</p>

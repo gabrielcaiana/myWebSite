@@ -46,6 +46,7 @@ export default {
     '@/assets/css/tailwind.css',
     '@/assets/css/slug.css',
     '@/assets/css/base.css',
+    '@/assets/css/theme.css'
   ],
 
   content: {
@@ -61,7 +62,7 @@ export default {
 
   components: [{ path: '@/components', pathPrefix: false }],
 
-  buildModules: ['@nuxtjs/eslint-module', 'nuxt-gsap-module'],
+  buildModules: ['@nuxtjs/eslint-module', 'nuxt-gsap-module', '@nuxtjs/color-mode'],
 
   modules: [
     '@nuxtjs/axios',
