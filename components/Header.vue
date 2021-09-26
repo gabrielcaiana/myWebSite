@@ -1,7 +1,7 @@
 <template>
   <header class="flex justify-center justify-center py-4">
     <div class="container flex justify-between">
-      <span>Gabriel Caiana</span>
+      <nuxt-link to="/">Gabriel Caiana</nuxt-link>
       <ul class="flex">
         <AppSearchInput />
 
