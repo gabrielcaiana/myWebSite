@@ -62,7 +62,7 @@ export default {
 
   components: [{ path: '@/components', pathPrefix: false }],
 
-  buildModules: ['@nuxtjs/eslint-module', 'nuxt-gsap-module', '@nuxtjs/color-mode'],
+  buildModules: ['@nuxtjs/eslint-module', 'nuxt-gsap-module', '@nuxtjs/color-mode', '@nuxtjs/svg'],
 
   modules: [
     '@nuxtjs/axios',
