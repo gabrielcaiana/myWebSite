@@ -12,7 +12,7 @@
             gap-x-6 gap-y-8
           "
         >
-          <ProjectCard />
+          <ProjectCard v-for="(card, index) in cards" :key="index" :card="card" />
         </section>
       </article>
     </section>
@@ -20,7 +20,19 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      cards: [
+        { 
+          cover: "/images/projects/ibook.png",
+          title: "Ibook",
+          link: "http://ibook.gabrielcaiana.com"
+        }
+      ]
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped></style>

@@ -1,5 +1,5 @@
 <template>
-  <article
+  <article 
     class="
       relative
       w-full
@@ -14,9 +14,7 @@
       duration-300
       ease-in-out
     "
-    style="
-      background-image: url('https://images.unsplash.com/photo-1623479322729-28b25c16b011?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80');
-    "
+    :style="`background-image: url('${card.cover}');`"
   >
     <div
       class="
@@ -43,9 +41,9 @@
       "
     >
       <h3 class="text-center">
-        <a class="text-white text-2xl font-bold text-center" href="#">
+        <a class="text-white text-2xl font-bold text-center" :href="card.link" target="_blank">
           <span class="absolute inset-0"></span>
-          Top 10 highest paid programming languages of 2021
+          {{ card.title }}
         </a>
       </h3>
     </div>
@@ -53,7 +51,12 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    card: {
+      type: Object,
+      required: true
+    }
+  }
+}
 </script>
-
-<style lang="scss" scoped></style>
