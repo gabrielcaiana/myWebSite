@@ -1,15 +1,26 @@
 <template>
   <Container>
-    <h1>Projects</h1> 
+    <h1>Projects</h1>
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 mb-12">
+      <article>
+        <section
+          class="
+            mt-6
+            grid grid-cols-1
+            md:grid-cols-1
+            lg:grid-cols-3
+            gap-x-6 gap-y-8
+          "
+        >
+          <ProjectCard />
+        </section>
+      </article>
+    </section>
   </Container>
 </template>
 
 <script>
-  export default {
-    
-  }
+export default {}
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
