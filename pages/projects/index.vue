@@ -12,7 +12,11 @@
             gap-x-6 gap-y-8
           "
         >
-          <ProjectCard v-for="(card, index) in cards" :key="index" :card="card" />
+          <ProjectCard
+            v-for="(card, index) in cards"
+            :key="index"
+            :card="card"
+          />
         </section>
       </article>
     </section>
@@ -24,12 +28,24 @@ export default {
   data() {
     return {
       cards: [
-        { 
-          cover: "/images/projects/ibook.png",
-          title: "Ibook",
-          link: "http://ibook.gabrielcaiana.com"
-        }
-      ]
+             {
+          cover: '/images/projects/biobe.png',
+          title: 'Biobe',
+          link: 'http://biobe.com.br',
+        },
+        {
+          cover: '/images/projects/ibook.png',
+          title: 'Ibook',
+          link: 'http://ibook.gabrielcaiana.com',
+          repository: 'https://github.com/gabrielcaiana/iBook',
+        },
+        {
+          cover: '/images/projects/sampa.png',
+          title: 'Sampa Eventos',
+          link: 'http://sampa-eventos.gabrielcaiana.com',
+          repository: 'https://github.com/gabrielcaiana/Sampa-Eventos',
+        },
+      ],
     }
   },
 }

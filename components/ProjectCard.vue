@@ -1,5 +1,5 @@
 <template>
-  <article 
+  <article
     class="
       relative
       w-full
@@ -41,11 +41,38 @@
       "
     >
       <h3 class="text-center">
-        <a class="text-white text-2xl font-bold text-center" :href="card.link" target="_blank">
+        <a
+          class="text-white text-2xl font-bold text-center"
+          :href="card.link"
+          target="_blank"
+        >
           <span class="absolute inset-0"></span>
           {{ card.title }}
         </a>
       </h3>
+
+      <a
+        v-if="card.repository"
+        :href="card.repository"
+        target="_blank"
+        class="
+          absolute
+          top-4
+          right-4
+          inline-flex
+          bg-blue-500
+          text-white
+          rounded-full
+          h-6
+          px-3
+          justify-center
+          items-center
+          w-28
+          cursor-pointer
+          text-sm
+        "
+        >Repository</a
+      >
     </div>
   </article>
 </template>
@@ -55,8 +82,8 @@ export default {
   props: {
     card: {
       type: Object,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 }
 </script>
