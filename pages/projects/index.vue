@@ -42,7 +42,7 @@ export default {
         {
           cover: '/images/projects/sampa.png',
           title: 'Sampa Eventos',
-          link: 'http://sampa-eventos.gabrielcaiana.com',
+          link: 'https://github.com/gabrielcaiana/Sampa-Eventos',
           repository: 'https://github.com/gabrielcaiana/Sampa-Eventos',
         },
       ],

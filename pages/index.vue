@@ -11,22 +11,8 @@
           development with a focus on usability and accessibility, in addition
           to providing a good experience for users.
         </p>
-        <nuxt-link
-          to="articles/page"
-          class="
-            rounded-lg
-            p-5
-            text-white
-            bg-blue-500
-            mb-10
-            hover:bg-blue-700
-            transition
-            duration-300
-            ease-in-out
-          "
-          >Read my blog</nuxt-link
-        >
       </div>
+      <SocialMedia />
       <ColorModePicker />
     </main>
   </Container>

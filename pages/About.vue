@@ -37,7 +37,7 @@ export default {
           description: `I work with the development of systems for the insurance market using javascript, Vue and Nuxt.`,
         },
         {
-          ocupation: `UX/UI Designer`,
+          ocupation: `Front-end Developer / UX/UI Designer`,
           name: `Signa Consultoria e Sistemas`,
           image: `/images/signa.jpg`,
           period: `July. 2019 0 Feb. 2021, 1 year 8 months`,
