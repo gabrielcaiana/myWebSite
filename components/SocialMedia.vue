@@ -1,6 +1,6 @@
 <template>
   <ul class="flex">
-    <li v-for="icon of icons" :key="icon" class="cursor-pointer">
+    <li v-for="(icon, index) of icons" :key="index" class="cursor-pointer">
       <a :href="icon.url" target="_blank">
         <component :is="`${icon.name}`" />
       </a>
