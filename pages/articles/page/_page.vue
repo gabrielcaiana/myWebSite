@@ -12,6 +12,10 @@ export default {
       paginatedArticles: content.paginatedArticles,
     }
   },
+
+  head: () => ({
+    title: 'Articles',
+  }),
 }
 </script>
 

@@ -7,7 +7,7 @@ const meta = getSiteMeta();
 export default {
   target: 'static',
   head: {
-    title: 'welcome to my personal website',
+    titleTemplate: "Gabriel Caiana : %s",
     auhtor: 'Gabriel Caiana Guedes',
     htmlAttrs: {
       lang: 'en',

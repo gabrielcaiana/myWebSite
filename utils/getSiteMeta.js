@@ -1,6 +1,6 @@
 const type = 'website'
 const url = 'https://gabrielcaiana.netlify.app'
-const title = 'My Amazing Blog on The Joy of Painting'
+const titleTemplate = "Gabriel Caiana : %s"
 const description =
   "I'm a 24-year-old software developer working primarily with JavaScript | TypeScript | Vue and Nuxt. Passionate about technology, innovation and UX | User interface design."
 const mainImage = '/images/me.jpg'
@@ -25,7 +25,7 @@ export default (meta) => {
     {
       hid: 'og:title',
       property: 'og:title',
-      content: (meta && meta.title) || title,
+      content: (meta && meta.title) || titleTemplate,
     },
     {
       hid: 'og:description',
@@ -45,7 +45,7 @@ export default (meta) => {
     {
       hid: 'twitter:title',
       name: 'twitter:title',
-      content: (meta && meta.title) || title,
+      content: (meta && meta.title) || titleTemplate,
     },
     {
       hid: 'twitter:description',

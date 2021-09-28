@@ -5,7 +5,9 @@
     <h3>Here are a list of articles by {{ articles[0].author.name }}:</h3>
     <ul>
       <li v-for="article in articles" :key="article.slug">
-        <NuxtLink :to="{ name: 'articles-slug', params: { slug: article.slug } }">
+        <NuxtLink
+          :to="{ name: 'articles-slug', params: { slug: article.slug } }"
+        >
           <img :src="article.img" :alt="article.alt" />
           <div>
             <h2>{{ article.title }}</h2>
@@ -36,6 +38,10 @@ export default {
       articles,
     }
   },
+
+  head: () => ({
+    title: 'Author',
+  }),
 
   methods: {
     formatDate,

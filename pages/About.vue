@@ -53,6 +53,10 @@ export default {
       ],
     }
   },
+
+  head: () => ({
+    title: 'About',
+  }),
 }
 </script>
 

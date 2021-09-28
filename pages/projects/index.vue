@@ -28,7 +28,7 @@ export default {
   data() {
     return {
       cards: [
-             {
+        {
           cover: '/images/projects/biobe.png',
           title: 'Biobe',
           link: 'http://biobe.com.br',
@@ -48,6 +48,9 @@ export default {
       ],
     }
   },
+  head: () => ({
+    title: 'Projects',
+  }),
 }
 </script>
 
