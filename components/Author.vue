@@ -2,7 +2,15 @@
   <div class="w-full px-2 xs:mb-6 md:mb-12 article-card">
     <NuxtLink
       :to="`/articles/author/${author.name}`"
-      class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
+      class="
+        flex
+        transition-shadow
+        duration-150
+        ease-in-out
+        shadow-sm
+        hover:shadow-md
+        xxlmax:flex-col
+      "
     >
       <img
         v-if="author.image"
@@ -24,8 +32,9 @@ export default {
   props: {
     author: {
       type: Object,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
+
 }
 </script>

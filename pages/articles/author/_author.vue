@@ -1,5 +1,5 @@
 <template>
-  <Container>
+  <Container class="container mx-auto max-w-screen-md">
     <h1>Author: {{ articles[0].author.name }}</h1>
     <p>Bio: {{ articles[0].author.bio }}</p>
     <h3>Here are a list of articles by {{ articles[0].author.name }}:</h3>
