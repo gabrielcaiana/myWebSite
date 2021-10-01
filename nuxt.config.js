@@ -70,24 +70,24 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/dotenv',
     '@nuxtjs/sitemap',
-    '@nuxtjs/i18n',
+    // '@nuxtjs/i18n',
   ],
 
-  i18n: {
-    locales: ['en', 'pt'],
-    defaultLocale: 'en',
-    vueI18n: {
-      fallbackLocale: 'en',
-      messages: {
-        en: {
-          welcome: 'Welcome'
-        },
-        pt: {
-          welcome: 'Bem vindo'
-        }
-      }
-    }
-  },
+  // i18n: {
+  //   locales: ['en', 'pt'],
+  //   defaultLocale: 'en',
+  //   vueI18n: {
+  //     fallbackLocale: 'en',
+  //     messages: {
+  //       en: {
+  //         welcome: 'Welcome'
+  //       },
+  //       pt: {
+  //         welcome: 'Bem vindo'
+  //       }
+  //     }
+  //   }
+  // },
 
   axios: {},
 

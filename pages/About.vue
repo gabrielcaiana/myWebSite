@@ -5,7 +5,7 @@
       <li
         v-for="(job, index) in jobs"
         :key="index"
-        class="flex items-center mb-4"
+        class="lg:flex lg:flex-row mb-4 sm:flex md:flex-col md:items-start"
       >
         <img
           class="rounded-xl object-cover mr-12"
