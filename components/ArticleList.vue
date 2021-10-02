@@ -7,7 +7,7 @@
         class="mb-12 bg-white bg-opacity-5 p-5 rounded shadow"
       >
         <NuxtLink
-          :to="{ name: 'articles-slug', params: { slug: article.slug } }"
+          :to="`/articles/${article.slug}`"
           class="md:grid md:gap-4 md:grid-cols-2 flex items-center flex flex-col"
         >
           <img
@@ -66,5 +66,9 @@ export default {
       default: 0,
     },
   },
+
+  mounted() {
+    console.log(this.articles)
+  }
 }
 </script>

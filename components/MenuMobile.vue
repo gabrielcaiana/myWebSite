@@ -2,8 +2,8 @@
   <transition name="slide">
     <nav v-if="show" class="menu-mobile">
       <nuxt-link class="item" to="/">Home</nuxt-link>
-      <nuxt-link class="item" to="/about">About</nuxt-link>
-      <nuxt-link class="item" to="/projects">Projects</nuxt-link>
+      <nuxt-link class="item" to="/about" >About</nuxt-link>
+      <nuxt-link class="item" to="/projects" >Projects</nuxt-link>
       <nuxt-link class="item" to="/articles">Blog</nuxt-link>
     </nav>
   </transition>
