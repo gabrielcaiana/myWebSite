@@ -70,24 +70,12 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/dotenv',
     '@nuxtjs/sitemap',
-    // '@nuxtjs/i18n',
+    '@nuxtjs/google-analytics'
   ],
 
-  // i18n: {
-  //   locales: ['en', 'pt'],
-  //   defaultLocale: 'en',
-  //   vueI18n: {
-  //     fallbackLocale: 'en',
-  //     messages: {
-  //       en: {
-  //         welcome: 'Welcome'
-  //       },
-  //       pt: {
-  //         welcome: 'Bem vindo'
-  //       }
-  //     }
-  //   }
-  // },
+  googleAnalytics: {
+    id: process.env.GOOGLE_ANALYTICS_ID
+  },
 
   axios: {},
 

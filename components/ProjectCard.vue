@@ -41,7 +41,7 @@
       "
     >
       <h3 class="text-center">
-        <a 
+        <a
           class="text-white text-2xl font-bold text-center"
           :href="card.link"
           target="_blank"
