@@ -50,29 +50,6 @@
           {{ card.title }}
         </a>
       </h3>
-
-      <a
-        v-if="card.repository"
-        :href="card.repository"
-        target="_blank"
-        class="
-          absolute
-          top-4
-          right-4
-          inline-flex
-          bg-blue-500
-          text-white
-          rounded-full
-          h-6
-          px-3
-          justify-center
-          items-center
-          w-28
-          cursor-pointer
-          text-sm
-        "
-        >Repository</a
-      >
     </div>
   </article>
 </template>

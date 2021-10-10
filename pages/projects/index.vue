@@ -37,13 +37,11 @@ export default {
           cover: '/images/projects/ibook.png',
           title: 'Ibook',
           link: 'http://ibook.gabrielcaiana.com',
-          repository: 'https://github.com/gabrielcaiana/iBook',
         },
         {
           cover: '/images/projects/sampa.png',
           title: 'Sampa Eventos',
           link: 'https://github.com/gabrielcaiana/Sampa-Eventos',
-          repository: 'https://github.com/gabrielcaiana/Sampa-Eventos',
         },
       ],
     }
