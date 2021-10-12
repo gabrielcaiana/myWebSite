@@ -77,7 +77,15 @@ export default {
     id: process.env.GOOGLE_ANALYTICS_ID
   },
 
-  axios: {},
+  axios: {
+    baseURL: process.env.NODE_ENV === "production" ? process.env.BASE_URL : "http://localhost:3000"
+  },
+
+  publicRuntimeConfig: {
+    axios: {
+      browserBaseURL: process.env.NODE_ENV === "production" ? process.env.BASE_URL : "http://localhost:3000"
+    }
+  },
 
   build: {},
 
