@@ -32,4 +32,8 @@
   .content-area {
     min-height: calc(100vh - 184px);
   }
+
+  .nuxt-content a {
+    @apply text-green-500;
+  }
 }
