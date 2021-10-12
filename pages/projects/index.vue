@@ -25,27 +25,14 @@
 
 <script>
 export default {
-  data() {
+    async asyncData({ $projectsApi }) {
+    const projectResponse = await $projectsApi.getProjects()
+    
     return {
-      cards: [
-        {
-          cover: '/images/projects/biobe.png',
-          title: 'Biobe',
-          link: 'http://biobe.com.br',
-        },
-        {
-          cover: '/images/projects/ibook.png',
-          title: 'Ibook',
-          link: 'http://ibook.gabrielcaiana.com',
-        },
-        {
-          cover: '/images/projects/sampa.png',
-          title: 'Sampa Eventos',
-          link: 'https://github.com/gabrielcaiana/Sampa-Eventos',
-        },
-      ],
+      cards: projectResponse
     }
   },
+
   head: () => ({
     title: 'Projects',
   }),

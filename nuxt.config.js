@@ -81,6 +81,8 @@ export default {
 
   build: {},
 
+  plugins: ['@/plugins/projects'],
+
   sitemap: {
     hostname:
       process.env.NODE_ENV === 'production'
