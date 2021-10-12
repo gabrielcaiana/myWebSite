@@ -62,7 +62,7 @@ export default {
 
   components: [{ path: '@/components', pathPrefix: false }],
 
-  buildModules: ['@nuxtjs/eslint-module', 'nuxt-gsap-module', '@nuxtjs/color-mode', '@nuxtjs/svg'],
+  buildModules: ['@nuxtjs/eslint-module', 'nuxt-gsap-module', '@nuxtjs/color-mode', '@nuxtjs/svg', '@nuxtjs/pwa'],
 
   modules: [
     '@nuxtjs/axios',
@@ -71,7 +71,6 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/sitemap',
     '@nuxtjs/google-analytics',
-    '@nuxtjs/pwa',
   ],
 
   googleAnalytics: {
