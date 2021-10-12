@@ -70,7 +70,8 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/dotenv',
     '@nuxtjs/sitemap',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/pwa',
   ],
 
   googleAnalytics: {
@@ -84,6 +85,17 @@ export default {
   publicRuntimeConfig: {
     axios: {
       browserBaseURL: process.env.NODE_ENV === "production" ? process.env.BASE_URL : "http://localhost:3000"
+    }
+  },
+
+  pwa: {
+    pwa: {
+      icon: false
+    },
+    manifest: {
+      name: 'Gabriel Caiana - Website',
+      lang: 'en',
+      useWebmanifestExtension: false
     }
   },
 
