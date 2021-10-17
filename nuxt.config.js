@@ -100,7 +100,7 @@ export default {
 
   build: {},
 
-  plugins: ['@/plugins/projects'],
+  plugins: ['@/plugins/projects', '@/plugins/jobs'],
 
   sitemap: {
     hostname:

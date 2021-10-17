@@ -25,11 +25,11 @@
 
 <script>
 export default {
-    async asyncData({ $projectsApi }) {
+  async asyncData({ $projectsApi }) {
     const projectResponse = await $projectsApi.getProjects()
-    
+
     return {
-      cards: projectResponse
+      cards: projectResponse,
     }
   },
 

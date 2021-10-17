@@ -26,31 +26,11 @@
 
 <script>
 export default {
-  data() {
+  async asyncData({ $jobsApi }) {
+    const jobsResponse = await $jobsApi.getJobs()
+
     return {
-      jobs: [
-        {
-          ocupation: `Front-end Developer`,
-          name: `i4pro`,
-          image: `/images/i4pro.jpeg`,
-          period: `Feb. 2021 - The moment`,
-          description: `I work with the development of systems for the insurance market using javascript, Vue and Nuxt.`,
-        },
-        {
-          ocupation: `Front-end Developer / UX/UI Designer`,
-          name: `Signa Consultoria e Sistemas`,
-          image: `/images/signa.jpg`,
-          period: `July. 2019 0 Feb. 2021, 1 year 8 months`,
-          description: `I was responsible for the ideation and maintenance of the company's product design, as well as the creation of Front-end features, identification of business opportunities, creation of web and mobile interfaces, working with large companies in the logistics market.`,
-        },
-        {
-          ocupation: `IT Technician`,
-          name: `AGB computers and Services`,
-          image: `/images/agb.jpeg`,
-          period: `Feb. 2019 0 Jul. 2021, 4 months`,
-          description: ``,
-        },
-      ],
+      jobs: jobsResponse,
     }
   },
 
@@ -59,5 +39,3 @@ export default {
   }),
 }
 </script>
-
-<style lang="scss" scoped></style>
