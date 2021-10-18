@@ -29,10 +29,11 @@
 
 <script>
 export default {
+  name: "Author",
   props: {
     author: {
       type: Object,
-      required: true,
+      required: true
     },
   },
 

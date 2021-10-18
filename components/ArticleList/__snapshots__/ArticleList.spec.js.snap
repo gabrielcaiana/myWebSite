@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleList create Snapshot 1`] = `
+<container>
+  <ul
+    class="max-w-5xl mx-auto"
+  />
+   
+  <!---->
+</container>
+`;

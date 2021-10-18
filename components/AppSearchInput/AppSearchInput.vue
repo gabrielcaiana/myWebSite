@@ -18,6 +18,7 @@
 
 <script>
   export default {
+    name: "AppSearchInput",
     data() {
       return {
         searchQuery: '',

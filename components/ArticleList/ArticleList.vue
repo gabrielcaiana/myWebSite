@@ -8,7 +8,12 @@
       >
         <NuxtLink
           :to="`/articles/${article.slug}`"
-          class="md:grid md:gap-4 md:grid-cols-2 flex items-center flex flex-col"
+          class="
+            md:grid md:gap-4 md:grid-cols-2
+            flex
+            items-center
+            flex flex-col
+          "
         >
           <img
             v-if="article.img"
@@ -66,9 +71,5 @@ export default {
       default: 0,
     },
   },
-
-  mounted() {
-    console.log(this.articles)
-  }
 }
 </script>
