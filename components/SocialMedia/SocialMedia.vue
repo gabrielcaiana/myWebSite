@@ -9,17 +9,12 @@
 </template>
 
 <script>
-import twitter from '@/assets/icons/twitter.svg?inline'
-import linkedin from '@/assets/icons/linkedin.svg?inline'
-import github from '@/assets/icons/github.svg?inline'
-import email from '@/assets/icons/email.svg?inline'
-
 export default {
   components: {
-    twitter,
-    linkedin,
-    github,
-    email,
+    twitter: () => import(/* webpackChunkName: "twitter" */ '@/assets/icons/twitter.svg?inline'),
+    linkedin: () => import(/* webpackChunkName: "linkedin" */'@/assets/icons/linkedin.svg?inline'),
+    github: () => import(/* webpackChunkName: "github" */'@/assets/icons/github.svg?inline'),
+    email: () => import(/* webpackChunkName: "email" */ '@/assets/icons/email.svg?inline'),
   },
 
   data() {
