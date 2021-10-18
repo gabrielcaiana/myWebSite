@@ -16,8 +16,8 @@ export default {
   }),
   methods: {
     change() {
-      const clickx = document.getElementById('pencet');
-      clickx.classList.toggle('Diam');
+      const click = document.getElementById('pencet');
+      click.classList.toggle('Diam');
 
       this.show = !this.show
     }

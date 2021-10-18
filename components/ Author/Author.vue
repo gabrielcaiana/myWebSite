@@ -20,8 +20,8 @@
       <div class="flex flex-col m-4">
         <h4 class="font-semibold">Author</h4>
 
-        <p>{{ author.name }}</p>
-        <p>{{ author.bio }}</p>
+        <p class="author-name">{{ author.name }}</p>
+        <p class="author-bio">{{ author.bio }}</p>
       </div>
     </NuxtLink>
   </div>

@@ -71,5 +71,9 @@ export default {
       default: 0,
     },
   },
+
+  mounted() {
+    console.log(this.total)
+  }
 }
 </script>

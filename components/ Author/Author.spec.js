@@ -1,5 +1,5 @@
 import { mount, RouterLinkStub } from "@vue/test-utils"
-import Author from "~/components/ Author/Author.vue"
+import Author from "./Author.vue"
 
 describe("Author", () => {
 
@@ -27,4 +27,9 @@ describe("Author", () => {
   it("create Snapshot", () => {
     expect(wrapper.element).toMatchSnapshot()
   })
+
+  it("should render the text", () => {
+    expect(wrapper.find(".author-name").text()).toBe("Gabriel Caiana")
+    expect(wrapper.find(".author-bio").text()).toBe("I`am front-end developer")
+  })  
 })

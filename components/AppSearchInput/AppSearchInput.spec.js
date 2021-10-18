@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import AppSearchInput from '@/components/AppSearchInput.vue'
+import AppSearchInput from './AppSearchInput.vue'
 
 describe('AppSearchInput', () => {
   const wrapper = mount(AppSearchInput)

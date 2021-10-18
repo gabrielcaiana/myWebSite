@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppSearchInput create Snapshot 1`] = `
+<div
+  class="z-50"
+>
+  <input
+    autocomplete="off"
+    placeholder="Search Articles"
+    type="search"
+  />
+   
+  <!---->
+</div>
+`;

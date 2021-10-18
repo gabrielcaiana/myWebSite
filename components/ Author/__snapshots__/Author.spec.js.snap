@@ -29,11 +29,15 @@ exports[`Author create Snapshot 1`] = `
         Author
       </h4>
        
-      <p>
+      <p
+        class="author-name"
+      >
         Gabriel Caiana
       </p>
        
-      <p>
+      <p
+        class="author-bio"
+      >
         I\`am front-end developer
       </p>
     </div>
