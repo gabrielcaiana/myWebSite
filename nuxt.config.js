@@ -18,7 +18,7 @@ export default {
         rel: 'canonical',
         href: process.env.BASE_URL,
       },
-      // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '' },
     ],
     meta: [
       ...meta,
