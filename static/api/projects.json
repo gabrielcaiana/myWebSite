@@ -18,5 +18,10 @@
     "cover": "/images/projects/myWebsite.png",
     "title": "My Website",
     "link": "https://github.com/gabrielcaiana/myWebSite"
+  },
+  {
+    "cover": "/images/projects/memoryGame.png",
+    "title": "Memory Game",
+    "link": "https://jogo-da-memoria.gabrielcaiana.vercel.app/"
   }
 ]
