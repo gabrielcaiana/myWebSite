@@ -29,14 +29,14 @@
   {
     "cover": "/images/projects/myWebsite.png",
     "title": "My Website",
-    "description": "Meu site pessoal foi desenvolvido utilizando NuxtJs e Nuxt Content para criação dos posts no meu blog pessoal, com o objetivo de compartilhar conhecimento relacionados a design. programação e projeto que venho desenvolvendo.",
+    "description": "Meu site pessoal foi desenvolvido utilizando NuxtJs e Nuxt Content para criação dos posts no meu blog pessoal, com o objetivo de compartilhar conhecimento relacionados a design, programação e projeto que venho desenvolvendo.",
     "technologies": [{ "name": "NuxtJs", "color": "#4EB07F" }],
     "link": "https://github.com/gabrielcaiana/myWebSite"
   },
   {
     "cover": "/images/projects/memoryGame.png",
     "title": "Memory Game",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque debitis saepe, eaque similique que. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque debitis saepe, eaque similique que.",
+    "description": "O jogo da memória é um clássico jogo formado por peças que apresentam uma figura em um dos lados. Caso as figuras sejam iguais, o participante deve recolher consigo esse par e jogar novamente.",
     "technologies": [{ "name": "JavaScript", "color": "#E97B38" }],
     "link": "https://jogo-da-memoria.gabrielcaiana.vercel.app/"
   }
