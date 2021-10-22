@@ -9,8 +9,7 @@
         hover:shadow-2xl
         transition
         duration-500
-        flex
-        flex-col
+        flex flex-col
       "
     >
       <article
@@ -72,11 +71,13 @@
         <p class="text-gray-400 leading-6 tracking-normal">
           {{ card.description }}
         </p>
-        <button
-          class="py-2 px-4 mt-8 bg-blue-500 text-white rounded-md shadow-xl"
-        >
-          Learn More
-        </button>
+        <a target="_blank" :href="card.link">
+          <button
+            class="py-2 px-4 mt-4 bg-blue-500 text-white rounded-md shadow-xl"
+          >
+            Learn More
+          </button>
+        </a>
         <div
           class="
             flex
@@ -93,14 +94,7 @@
           <span
             v-for="(technologie, index) in card.technologies"
             :key="index"
-            class="
-              py-2
-              px-6
-              ml-2
-              text-sm text-white
-              rounded-md
-              shadow-xl
-            "
+            class="py-2 px-6 ml-2 text-sm text-white rounded-md shadow-xl"
             :style="`background: ${technologie.color}`"
             >{{ technologie.name }}</span
           >

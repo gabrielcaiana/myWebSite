@@ -2,14 +2,14 @@
   {
     "cover": "/images/projects/biobe.png",
     "title": "Biobe",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque debitis saepe, eaque similique que. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque debitis saepe, eaque similique que.",
+    "description": "A biobe nasceu da sensibilidade e experiência no mercado dito “tradicional”, percebendo que muitos processos podem ser mais bem estruturados e transparentes em benefício do cliente.",
     "technologies": [{ "name": "NuxtJs", "color": "#4EB07F" }],
     "link": "http://biobe.com.br"
   },
   {
     "cover": "/images/projects/ibook.png",
     "title": "Ibook",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque debitis saepe, eaque similique que. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque debitis saepe, eaque similique que.",
+    "description": "O Ibook é uma bibilhoteca de livros online, onde você encontra uma grande diversidade de livros para você ler, compartilhar com os amigos e se divertir, o sistema foi feito usando Atomic Design e NuxtJs.",
     "technologies": [
       { "name": "NuxtJs", "color": "#4EB07F" },
       { "name": "TypeScript", "color": "#2274C2" }
@@ -19,7 +19,7 @@
   {
     "cover": "/images/projects/sampa.png",
     "title": "Sampa Eventos",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque debitis saepe, eaque similique que. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque debitis saepe, eaque similique que.",
+    "description": "O sampa eventos é um portal fictício onde você pode encontrar e cadastrar eventos em São Paulo, aproveitando um design clean e moderno, o sitema foi feito utilizando NuxtJs no front-end e Adonis no Back-end",
     "technologies": [
       { "name": "NuxtJs", "color": "#4EB07F" },
       { "name": "Adonis", "color": "#5646F2" }
@@ -29,7 +29,7 @@
   {
     "cover": "/images/projects/myWebsite.png",
     "title": "My Website",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque debitis saepe, eaque similique que. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque debitis saepe, eaque similique que.",
+    "description": "Meu site pessoal foi desenvolvido utilizando NuxtJs e Nuxt Content para criação dos posts no meu blog pessoal, com o objetivo de compartilhar conhecimento relacionados a design. programação e projeto que venho desenvolvendo.",
     "technologies": [{ "name": "NuxtJs", "color": "#4EB07F" }],
     "link": "https://github.com/gabrielcaiana/myWebSite"
   },
