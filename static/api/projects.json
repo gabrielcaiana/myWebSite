@@ -2,26 +2,42 @@
   {
     "cover": "/images/projects/biobe.png",
     "title": "Biobe",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque debitis saepe, eaque similique que. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque debitis saepe, eaque similique que.",
+    "technologies": [{ "name": "NuxtJs", "color": "#4EB07F" }],
     "link": "http://biobe.com.br"
   },
   {
     "cover": "/images/projects/ibook.png",
     "title": "Ibook",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque debitis saepe, eaque similique que. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque debitis saepe, eaque similique que.",
+    "technologies": [
+      { "name": "NuxtJs", "color": "#4EB07F" },
+      { "name": "TypeScript", "color": "#2274C2" }
+    ],
     "link": "http://ibook.gabrielcaiana.com"
   },
   {
     "cover": "/images/projects/sampa.png",
     "title": "Sampa Eventos",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque debitis saepe, eaque similique que. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque debitis saepe, eaque similique que.",
+    "technologies": [
+      { "name": "NuxtJs", "color": "#4EB07F" },
+      { "name": "Adonis", "color": "#5646F2" }
+    ],
     "link": "https://github.com/gabrielcaiana/Sampa-Eventos"
   },
   {
     "cover": "/images/projects/myWebsite.png",
     "title": "My Website",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque debitis saepe, eaque similique que. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque debitis saepe, eaque similique que.",
+    "technologies": [{ "name": "NuxtJs", "color": "#4EB07F" }],
     "link": "https://github.com/gabrielcaiana/myWebSite"
   },
   {
     "cover": "/images/projects/memoryGame.png",
     "title": "Memory Game",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque debitis saepe, eaque similique que. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque debitis saepe, eaque similique que.",
+    "technologies": [{ "name": "JavaScript", "color": "#E97B38" }],
     "link": "https://jogo-da-memoria.gabrielcaiana.vercel.app/"
   }
 ]
