@@ -7,10 +7,8 @@ export default async ($content, params, error) => {
 
   const totalArticles = allArticles.length;
 
-  // use Math.ceil to round up to the nearest whole number
   const lastPage = Math.ceil(totalArticles / perPage);
 
-  // use the % (modulus) operator to get a whole remainder
   const lastPageCount = totalArticles % perPage;
 
   const skipNumber = () => {
