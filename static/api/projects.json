@@ -1,5 +1,15 @@
 [
   {
+    "cover": "/images/projects/nlw7.png",
+    "title": "NLW Heat",
+    "description": "O projeto NLW Heat foi desenvolvido inspirado na next level week da rocketseat desenvolvido originalmente com react, decidi reproduzir o mesmo projeto porém utilizando o VueJs 3, Tailwind e Vite.",
+    "technologies": [
+      { "name": "VueJs", "color": "#00AC70" },
+      { "name": "Vite", "color": "#C100F7" }
+    ],
+    "link": "https://github.com/gabrielcaiana"
+  },
+  {
     "cover": "/images/projects/biobe.png",
     "title": "Biobe",
     "description": "A biobe nasceu da sensibilidade e experiência no mercado dito “tradicional”, percebendo que muitos processos podem ser mais bem estruturados e transparentes em benefício do cliente.",
@@ -15,6 +25,15 @@
       { "name": "TypeScript", "color": "#2274C2" }
     ],
     "link": "http://ibook.gabrielcaiana.com"
+  },
+  {
+    "cover": "/images/projects/open-interprise.png",
+    "title": "Open Interprise UI Clone",
+    "description": "Open Interprise é um UI clone que foi desenvolvido para aplicar os conceitos de componentes utilizando VueJS para desenvolvedores que estão iniciando no desenvolvimento com o framework.",
+    "technologies": [
+      { "name": "VueJs", "color": "#00AC70" }
+    ],
+    "link": "https://challenge-trainee-s.vercel.app/#/"
   },
   {
     "cover": "/images/projects/sampa.png",
