@@ -2,12 +2,12 @@
   {
     "cover": "/images/projects/nlw7.png",
     "title": "NLW Heat",
-    "description": "O projeto NLW Heat foi desenvolvido inspirado na next level week da rocketseat desenvolvido originalmente com react, decidi reproduzir o mesmo projeto porém utilizando o VueJs 3, Tailwind e Vite.",
+    "description": "O projeto NLW Heat foi desenvolvido inspirado na next level week da rocketseat desenvolvido originalmente com react, decidi reproduzir o mesmo projeto porém utilizando VueJs 3, composition API e Vite.",
     "technologies": [
       { "name": "VueJs", "color": "#00AC70" },
       { "name": "Vite", "color": "#C100F7" }
     ],
-    "link": "https://github.com/gabrielcaiana"
+    "link": "https://github.com/gabrielcaiana/nlw-heat-vue"
   },
   {
     "cover": "/images/projects/biobe.png",
