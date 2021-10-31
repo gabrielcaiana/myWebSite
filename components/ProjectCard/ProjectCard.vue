@@ -110,7 +110,7 @@ export default {
     card: {
       type: Object,
       required: true,
-    },
+    }
   },
 }
 </script>
