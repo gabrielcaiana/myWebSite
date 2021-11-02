@@ -1,10 +1,13 @@
 <template>
   <transition name="slide">
     <nav v-if="show" class="menu-mobile">
-      <nuxt-link class="item" to="/">Home</nuxt-link>
-      <nuxt-link class="item" to="/about" >About</nuxt-link>
-      <nuxt-link class="item" to="/projects" >Projects</nuxt-link>
-      <nuxt-link class="item" to="/articles">Blog</nuxt-link>
+      <nuxt-link
+        v-for="menu in menus"
+        :key="menu.name"
+        class="item"
+        :to="menu.path"
+        v-text="menu.name"
+      />
     </nav>
   </transition>
 </template>
@@ -17,6 +20,17 @@ export default {
       required: true,
       default: false,
     },
+  },
+
+  data() {
+    return {
+      menus: [
+        { name: 'Home', path: '/' },
+        { name: 'About', path: '/about' },
+        { name: 'Projects', path: '/projects' },
+        { name: 'Blog', path: '/articles' },
+      ],
+    }
   },
 }
 </script>
