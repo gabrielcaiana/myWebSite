@@ -40,8 +40,8 @@ export default {
   },
 
   watch: {
-    currentPage(newValue, oldValue) {
-      if(newValue !== oldValue) this.$emit('close', false)
+    currentPage(current, old) {
+      if(current !== old) this.$emit('close', false)
     }
   },
 }
