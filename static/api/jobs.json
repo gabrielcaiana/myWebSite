@@ -1,5 +1,12 @@
 [
   {
+    "ocupation": "Front-end Developer",
+    "name": "Petlove",
+    "image": "/images/petlove.png",
+    "period": "Nov. 2021 - The moment",
+    "description": "I'm a front-end developer."
+  },
+  {
     "ocupation": "Front-end Developer | UI Designer",
     "name": "OnClass",
     "image": "/images/onclass.png",
