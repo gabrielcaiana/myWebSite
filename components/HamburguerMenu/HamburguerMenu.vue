@@ -36,13 +36,17 @@ export default {
 }
 
 #pencet span {
-  background-color: ghostwhite;
+  background-color: black;
   width: 2em;
   height: 0.2em;
   margin: 0.26em 0;
   display: block;
   transition: all 0.4s ease;
   transform-origin: 0 0;
+}
+
+.dark-mode #pencet span {
+  background-color: #fff;
 }
 
 .Diam span:nth-child(1) {
