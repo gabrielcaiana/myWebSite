@@ -4,11 +4,11 @@
       <nuxt-link to="/">Gabriel Caiana</nuxt-link>
       <ul v-if="isMobile.width > 901" class="flex">
         <li
-          v-for="(item, index) in items"
+          v-for="(menu, index) in menus"
           :key="index"
           class="pl-6 hover:text-blue-500 transition duration-300 ease-in-out"
         >
-          <nuxt-link :to="item.path" v-text="item.title"></nuxt-link>
+          <nuxt-link :to="menu.path" v-text="menu.name"></nuxt-link>
         </li>
       </ul>
     <HamburguerMenu v-if="isMobile.width < 900" />
@@ -20,11 +20,11 @@
 export default {
   data() {
     return {
-      items: [
-        { title: 'Home', path: '/' },
-        { title: 'About', path: '/about' },
-        { title: 'Projects', path: '/projects' },
-        { title: 'Blog', path: '/articles/page' },
+      menus: [
+        { name: 'Home', path: '/' },
+        { name: 'About', path: '/about' },
+        { name: 'Projects', path: '/projects' },
+        { name: 'Blog', path: '/articles/page' },
       ],
 
       window: {
