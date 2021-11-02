@@ -1,6 +1,6 @@
 <template>
   <transition name="slide">
-    <nav v-if="show" class="menu-mobile">
+    <nav v-if="show" class="menu-mobile" @click="close">
       <nuxt-link
         v-for="menu in menus"
         :key="menu.name"
@@ -33,15 +33,9 @@ export default {
     }
   },
 
-  computed: {
-    currentPage() {
-      return this.$route.path
-    },
-  },
-
-  watch: {
-    currentPage(current, old) {
-      if(current !== old) this.$emit('close', false)
+  methods: {
+    close() {
+      this.$emit('close')
     }
   },
 }

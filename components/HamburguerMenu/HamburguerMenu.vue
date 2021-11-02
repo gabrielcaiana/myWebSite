@@ -18,7 +18,6 @@ export default {
     change() {
       const click = document.getElementById('pencet')
       click.classList.toggle('Diam')
-
       this.show = !this.show
     }
   },
