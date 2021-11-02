@@ -5,24 +5,24 @@
       <span></span>
       <span></span>
     </div>
-    <MenuMobile :show="show" />
+    <MenuMobile :show="show" @close="change()" />
   </div>
 </template>
 
 <script>
 export default {
-  data:() => ({
+  data: () => ({
     show: false,
   }),
   methods: {
     change() {
-      const click = document.getElementById('pencet');
-      click.classList.toggle('Diam');
+      const click = document.getElementById('pencet')
+      click.classList.toggle('Diam')
 
       this.show = !this.show
     }
   },
-};
+}
 </script>
 
 <style lang="css" scoped>

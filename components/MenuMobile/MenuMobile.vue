@@ -29,7 +29,19 @@ export default {
         { name: 'About', path: '/about' },
         { name: 'Projects', path: '/projects' },
         { name: 'Blog', path: '/articles' },
-      ],
+      ]
+    }
+  },
+
+  computed: {
+    currentPage() {
+      return this.$route.path
+    },
+  },
+
+  watch: {
+    currentPage(newValue, oldValue) {
+      if(newValue !== oldValue) this.$emit('close', false)
     }
   },
 }
