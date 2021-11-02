@@ -45,9 +45,9 @@ export default {
 .menu-mobile {
   height: 100vh;
   width: 250px;
-  background: #243746;
   position: absolute;
   top: 0;
+  background-color: #243746;
   right: 0;
   display: flex;
   flex-direction: column;
@@ -59,6 +59,7 @@ export default {
 
 .menu-mobile .item {
   padding: 1rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.247);
 }
 </style>
