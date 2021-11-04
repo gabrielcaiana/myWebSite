@@ -5,7 +5,6 @@ import getSiteMeta from './utils/getSiteMeta'
 const meta = getSiteMeta()
 
 export default {
-  target: 'static',
   head: {
     titleTemplate: 'Gabriel Caiana',
     auhtor: 'Gabriel Caiana Guedes',
