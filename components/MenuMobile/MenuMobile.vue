@@ -1,6 +1,6 @@
 <template>
   <transition name="slide">
-    <nav v-if="show" class="menu-mobile">
+    <nav v-if="show" class="menu-mobile" @click="close">
       <nuxt-link
         v-for="menu in menus"
         :key="menu.name"
@@ -33,15 +33,9 @@ export default {
     }
   },
 
-  computed: {
-    currentPage() {
-      return this.$route.path
-    },
-  },
-
-  watch: {
-    currentPage(current, old) {
-      if(current !== old) this.$emit('close', false)
+  methods: {
+    close() {
+      this.$emit('close')
     }
   },
 }
@@ -51,9 +45,9 @@ export default {
 .menu-mobile {
   height: 100vh;
   width: 250px;
-  background: #243746;
   position: absolute;
   top: 0;
+  background-color: #243746;
   right: 0;
   display: flex;
   flex-direction: column;
@@ -65,6 +59,7 @@ export default {
 
 .menu-mobile .item {
   padding: 1rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.247);
 }
 </style>

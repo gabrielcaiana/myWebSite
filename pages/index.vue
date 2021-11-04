@@ -13,7 +13,7 @@
         </p>
       </div>
       <SocialMedia />
-      <ColorModePicker />
+      <!-- <ColorModePicker /> -->
     </main>
   </Container>
 </template>

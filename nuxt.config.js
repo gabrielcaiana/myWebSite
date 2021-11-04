@@ -1,13 +1,13 @@
 import getRoutes from './utils/getRoutes.js'
 
-import getSiteMeta from "./utils/getSiteMeta";
+import getSiteMeta from './utils/getSiteMeta'
 
-const meta = getSiteMeta();
+const meta = getSiteMeta()
 
 export default {
   target: 'static',
   head: {
-    titleTemplate: "Gabriel Caiana",
+    titleTemplate: 'Gabriel Caiana',
     auhtor: 'Gabriel Caiana Guedes',
     htmlAttrs: {
       lang: 'en',
@@ -38,7 +38,7 @@ export default {
       { property: 'og:image:height', content: '300' },
 
       { name: 'twitter:site', content: '@gabrielgueedes' },
-      { name: 'twitter:card', content: 'summary_large_image' }
+      { name: 'twitter:card', content: 'summary_large_image' },
     ],
   },
 
@@ -46,7 +46,7 @@ export default {
     '@/assets/css/tailwind.css',
     '@/assets/css/slug.css',
     '@/assets/css/base.css',
-    '@/assets/css/theme.css'
+    '@/assets/css/theme.css',
   ],
 
   content: {
@@ -62,7 +62,12 @@ export default {
 
   components: [{ path: '@/components', pathPrefix: false }],
 
-  buildModules: ['@nuxtjs/eslint-module', 'nuxt-gsap-module', '@nuxtjs/color-mode', '@nuxtjs/svg', '@nuxtjs/pwa'],
+  buildModules: [
+    '@nuxtjs/eslint-module',
+    'nuxt-gsap-module',
+    '@nuxtjs/color-mode',
+    '@nuxtjs/svg',
+  ],
 
   modules: [
     '@nuxtjs/axios',
@@ -71,31 +76,38 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/sitemap',
     '@nuxtjs/google-analytics',
+    '@nuxtjs/pwa',
   ],
 
   googleAnalytics: {
-    id: process.env.GOOGLE_ANALYTICS_ID
+    id: process.env.GOOGLE_ANALYTICS_ID,
   },
 
   axios: {
-    baseURL: process.env.NODE_ENV === "production" ? process.env.BASE_URL : "http://localhost:3000"
+    baseURL:
+      process.env.NODE_ENV === 'production'
+        ? process.env.BASE_URL
+        : 'http://localhost:3000',
   },
 
   publicRuntimeConfig: {
     axios: {
-      browserBaseURL: process.env.NODE_ENV === "production" ? process.env.BASE_URL : "http://localhost:3000"
-    }
+      browserBaseURL:
+        process.env.NODE_ENV === 'production'
+          ? process.env.BASE_URL
+          : 'http://localhost:3000',
+    },
   },
 
   pwa: {
     pwa: {
-      icon: false
+      icon: false,
     },
     manifest: {
       name: 'Gabriel Caiana - Website',
       lang: 'en',
-      useWebmanifestExtension: false
-    }
+      useWebmanifestExtension: false,
+    },
   },
 
   build: {},

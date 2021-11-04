@@ -70,10 +70,6 @@ export default {
       type: Number,
       default: 0,
     },
-  },
-
-  mounted() {
-    console.log(this.total)
   }
 }
 </script>
