@@ -2,6 +2,7 @@ import { mount, RouterLinkStub } from '@vue/test-utils'
 import MenuMobile from '~/components/MenuMobile/MenuMobile.vue'
 
 describe('MenuMobile', () => {
+  const path = "/"
   let wrapper 
   beforeAll(() => {
     wrapper = mount(MenuMobile, {
@@ -10,7 +11,13 @@ describe('MenuMobile', () => {
       },
       stubs: {
         NuxtLink: RouterLinkStub
-      }
+      },
+
+      computed: {
+        currentPage() {
+          return path
+        },
+      },
     })
   })
 

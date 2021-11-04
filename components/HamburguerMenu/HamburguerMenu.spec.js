@@ -5,7 +5,7 @@ import MenuMobile from "~/components/MenuMobile/MenuMobile.vue"
 describe('HamburguerMenu', () => {
   test('is a Vue instance', () => {
     const wrapper = mount(HamburguerMenu, {
-      stubs: { MenuMobile }
+      stubs: { MenuMobile},
     })
     expect(wrapper.vm).toBeTruthy()
   })

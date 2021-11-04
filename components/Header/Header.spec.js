@@ -4,14 +4,20 @@ import HamburguerMenu from "~/components/HamburguerMenu/HamburguerMenu.vue"
 import MenuMobile from "~/components/MenuMobile/MenuMobile.vue"
 
 describe('Header', () => {
-  test('is a Vue instance', () => {
-    const wrapper = mount(Header, {
+  
+  let wrapper;
+  
+  beforeAll(() => {
+    wrapper = mount(Header, {
       stubs: {
         NuxtLink: RouterLinkStub,
         HamburguerMenu,
         MenuMobile
-      },
+      }
     })
+  })
+
+  it('is a Vue instance', () => {
     expect(wrapper.vm).toBeTruthy()
   })
 })
