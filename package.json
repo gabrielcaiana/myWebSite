@@ -1,5 +1,6 @@
 {
-  "name": "myBlog",
+  "name": "my-website",
+  "author": "Gabriel Caiana Guedes",
   "version": "1.0.0",
   "private": true,
   "scripts": {

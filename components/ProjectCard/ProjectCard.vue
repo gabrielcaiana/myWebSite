@@ -81,6 +81,8 @@
         <div
           class="
             flex
+            flex-wrap
+            gap-2
             justify-end
             absolute
             top-0

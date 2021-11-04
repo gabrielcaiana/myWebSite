@@ -1,5 +1,17 @@
 [
   {
+    "cover": "/images/projects/nuxtbnb.png",
+    "title": "NuxtBnB",
+    "description": "Esse é um clone do AirBnB pronto para produção. Comece a trabalhar com reservas, escolha de datas, pagamentos, galerias, usuários e muito mais, o projeto foi desenvolvido com nuxt, algolia, stripe, google maps e node.",
+    "technologies": [
+      { "name": "NuxtJs", "color": "#4EB07F" },
+      { "name": "Algolia", "color": "#5062F2" },
+      { "name": "Stripe", "color": "#5E55F3" },
+      { "name": "Maps", "color": "#de4033" }
+    ],
+    "link": "https://github.com/gabrielcaiana/nlw-heat-vue"
+  },
+  {
     "cover": "/images/projects/nlw7.png",
     "title": "NLW Heat",
     "description": "O projeto NLW Heat foi desenvolvido inspirado na next level week da rocketseat desenvolvido originalmente com react, decidi reproduzir o mesmo projeto porém utilizando VueJs 3, composition API e Vite.",
@@ -30,9 +42,7 @@
     "cover": "/images/projects/open-interprise.png",
     "title": "Open Interprise UI Clone",
     "description": "Open Interprise é um UI clone que foi desenvolvido para aplicar os conceitos de componentes utilizando VueJS para desenvolvedores que estão iniciando no desenvolvimento com o framework.",
-    "technologies": [
-      { "name": "VueJs", "color": "#00AC70" }
-    ],
+    "technologies": [{ "name": "VueJs", "color": "#00AC70" }],
     "link": "https://challenge-trainee-s.vercel.app/#/"
   },
   {
