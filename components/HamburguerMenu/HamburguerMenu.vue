@@ -1,5 +1,5 @@
 <template>
-  <div class="menu" :class="[show ? 'fixed right-0' : '']">
+  <div class="menu" :class="[show ? 'fixed right-0 z-10' : '']">
     <div id="pencet" @click="change">
       <span></span>
       <span></span>
