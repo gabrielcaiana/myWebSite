@@ -53,6 +53,7 @@ export default {
   transition: all 0.1s ease;
   width: 50px;
   height: 50px;
+  z-index: -1;
 }
 .feather:hover {
   top: -3px;
