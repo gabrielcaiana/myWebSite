@@ -27,7 +27,6 @@
 
 <script>
 import { formatDate } from '@/utils/date'
-import getSiteMeta from '@/utils/getSiteMeta'
 
 export default {
   async asyncData({ $content, params }) {
@@ -45,28 +44,15 @@ export default {
   head() {
     return {
       title: this.article.title,
+
       meta: [
-        ...this.meta,
-        {
-          property: 'article:published_time',
-          content: this.article.createdAt,
-        },
-        {
-          property: 'article:modified_time',
-          content: this.article.updatedAt,
-        },
-        {
-          property: 'article:tag',
-          content: this.article.tags ? this.article.tags.toString() : '',
-        },
-        { name: 'twitter:label1', content: 'Written by' },
-        { name: 'twitter:data1', content: 'Gabriel Caiana' },
-        { name: 'twitter:label2', content: 'Filed under' },
-        {
-          name: 'twitter:data2',
-          content: this.article.tags ? this.article.tags.toString() : '',
-        },
+        { hid: 'og:type', property: 'og:type', content: 'website' },
+        { hid: 'og:title', property: 'og:title', content: this.article.title },
+        { hid: 'og:desc', property: 'og:description', content: this.article.description },
+        { hid: 'og:image', property: 'og:image', content: this.article.img },
+        { hid: 'og:url', property: 'og:url', content: `${this.$config.axios.browserBaseURL}/articles/${this.$route.params.slug}` },
       ],
+
       link: [
         {
           hid: 'canonical',
@@ -76,20 +62,6 @@ export default {
       ],
     }
   },
-
-  computed: {
-  meta() {
-    const metaData = {
-      type: "article",
-      title: this.article.title,
-      description: this.article.description,
-      url: `${this.$config.axios.browserBaseURL}/articles/${this.$route.params.slug}`,
-      mainImage: this.article.img,
-    };
-    return getSiteMeta(metaData);
-  }
-},
-
   methods: {
     formatDate,
   },
