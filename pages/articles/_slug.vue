@@ -50,15 +50,13 @@ export default {
         { hid: 'og-title', property: 'og:title', content: this.article.title },
         { hid: 'og-desc', property: 'og:description', content: this.article.description },
         { hid: 'og-image', property: 'og:image', content: this.article.img },
+        { property: "og:image:width", content: "740" },
+        { property: "og:image:height", content: "300" },
         { hid: 'og-url', property: 'og:url', content: `${this.$config.axios.browserBaseURL}/articles/${this.$route.params.slug}` },
-        { hid: 't-type', property: 'twitter:card', content: 'summary_large_image' },
+        { hid: 't-type', name: 'twitter:card', content: 'summary_large_image' },
       ],
     }
   },
-    mounted() {
-      console.log(`${this.$config.axios.browserBaseURL}/articles/${this.$route.params.slug}`)
-    },
-
   methods: {
     formatDate,
   },
