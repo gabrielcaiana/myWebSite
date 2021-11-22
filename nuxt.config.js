@@ -2,14 +2,15 @@ import getRoutes from './utils/getRoutes.js'
 
 export default {
   head: {
+    titleTemplate: 'Gabriel Caiana: %s',
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: `I'm a 24-year-old software developer working primarily with JavaScript | TypeScript | Vue and Nuxt. Passionate about technology, innovation and UX | User interface design.` },
-    ]
+      {
+        charset: 'utf-8',
+      },
+    ],
   },
 
   css: [
@@ -19,7 +20,7 @@ export default {
     '@/assets/css/theme.css',
   ],
 
-  target: "static",
+  target: 'static',
 
   content: {
     nestedProperties: ['author.name'],
