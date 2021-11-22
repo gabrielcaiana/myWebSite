@@ -83,7 +83,7 @@ export default {
       type: "article",
       title: this.article.title,
       description: this.article.description,
-      url: `${this.$config.baseUrl}/articles/${this.$route.params.slug}`,
+      url: `${this.$config.axios.browserBaseURL}/articles/${this.$route.params.slug}`,
       mainImage: this.article.img,
     };
     return getSiteMeta(metaData);

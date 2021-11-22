@@ -5,6 +5,7 @@ const description =
   "I'm a 24-year-old software developer working primarily with JavaScript | TypeScript | Vue and Nuxt. Passionate about technology, innovation and UX | User interface design."
 const mainImage = '/images/me.jpg'
 
+
 export default (meta) => {
   return [
     {
