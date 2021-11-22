@@ -46,6 +46,8 @@ export default {
     '@/assets/css/theme.css',
   ],
 
+  target: "static",
+
   content: {
     nestedProperties: ['author.name'],
     markdown: {
