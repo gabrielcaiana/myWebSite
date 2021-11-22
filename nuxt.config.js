@@ -6,19 +6,9 @@ const meta = getSiteMeta()
 
 export default {
   head: {
-    titleTemplate: 'Gabriel Caiana',
-    auhtor: 'Gabriel Caiana Guedes',
     htmlAttrs: {
       lang: 'en',
     },
-    link: [
-      {
-        hid: 'canonical',
-        rel: 'canonical',
-        href: process.env.BASE_URL,
-      },
-      { rel: 'icon', type: 'image/x-icon', href: '' },
-    ],
     meta: [
       ...meta,
       { charset: 'utf-8' },
@@ -38,6 +28,14 @@ export default {
 
       { name: 'twitter:site', content: '@gabrielgueedes' },
       { name: 'twitter:card', content: 'summary_large_image' },
+    ],
+    link: [
+      {
+        hid: 'canonical',
+        rel: 'canonical',
+        href: process.env.BASE_URL,
+      },
+      { rel: 'icon', type: 'image/x-icon', href: '' },
     ],
   },
 
