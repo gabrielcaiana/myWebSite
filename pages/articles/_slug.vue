@@ -50,9 +50,9 @@ export default {
         { hid: 'og-title', property: 'og:title', content: this.article.title },
         { hid: 'og-desc', property: 'og:description', content: this.article.description },
         { hid: 'og-image', property: 'og:image', content: this.article.img },
-        { hid: 'og-url', property: 'og:url', content: `$https://www.gabrielcaiana.com/articles/${this.$route.params.slug}` },
+        { hid: 'og-url', property: 'og:url', content: `https://www.gabrielcaiana.com/articles/${this.$route.params.slug}` },
+        { hid: 't-type', property: 'twitter:card', content: 'summary_large_image' },
       ],
-
     }
   },
   methods: {
