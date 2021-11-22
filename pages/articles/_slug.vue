@@ -45,6 +45,14 @@ export default {
     return {
       title: this.article.title,
 
+      meta: [
+        { hid: 'og:type', property: 'og:type', content: 'website' },
+        { hid: 'og:title', property: 'og:title', content: this.article.title },
+        { hid: 'og:desc', property: 'og:description', content: this.article.description },
+        { hid: 'og:image', property: 'og:image', content: this.article.img },
+        { hid: 'og:url', property: 'og:url', content: `${this.$config.axios.browserBaseURL}/articles/${this.$route.params.slug}` },
+      ],
+
       link: [
         {
           hid: 'canonical',
