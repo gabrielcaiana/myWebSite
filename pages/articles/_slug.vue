@@ -57,7 +57,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `https://gabrielcaiana.netlify.app/articles/${this.$route.params.slug}`,
+          href: `https://www.gabrielcaiana.com/articles/${this.$route.params.slug}`,
         },
       ],
     }
