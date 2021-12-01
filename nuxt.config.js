@@ -5,7 +5,6 @@ const meta = getSiteMeta();
 
 export default {
   head: {
-    titleTemplate: 'Gabriel Caiana',
     htmlAttrs: {
       lang: 'pt-br',
     },

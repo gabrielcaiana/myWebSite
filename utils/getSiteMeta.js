@@ -2,11 +2,12 @@ const type = 'website'
 const url = 'https://gabrielcaiana.com'
 const title = "Gabriel Caiana"
 const description =
-  "I'm a 25-year-old software developer working primarily with JavaScript | TypeScript | Vue and Nuxt. Passionate about technology, innovation and UX | User interface design."
+  "Sou um desenvolvedor de software de 25 anos, trabalho com JavaScript | TypeScript | Node | Vue e Nuxt. Apaixonado por tecnologia, inovação e UX | UI design. Atualmente estou cursando tecnólogo em análise e desenvolvimento de sistemas e me especializando no desenvolvimento de softwares com foco em usabilidade e acessibilidade, além de proporcionar uma boa experiência para os usuários."
 const mainImage = '/images/me.jpeg'
 
 
 export default (meta) => {
+  debugger
   return [
     {
       hid: "description",

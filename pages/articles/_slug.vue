@@ -26,6 +26,7 @@
 </template>
 
 <script>
+import getSiteMeta from '../../utils/getSiteMeta'
 import { formatDate } from '@/utils/date'
 
 export default {
@@ -41,24 +42,50 @@ export default {
     return { article, prev, next }
   },
 
-  head() {
-    return {
-      title: this.article.title,
+head() {
+  return {
+    title: this.article.title,
+    meta: [
+      ...this.meta,
+      {
+        property: "article:published_time",
+        content: this.article.createdAt,
+      },
+      {
+        property: "article:modified_time",
+        content: this.article.updatedAt,
+      },
 
-      meta: [
-        { hid: 'og-title', property: 'og:title', content: this.article.title },
-        { hid: 'og-desc', property: 'og:description', content: this.article.description },
-        { hid: 'og-image', property: 'og:image', content: this.article.img },
-        { property: "og:image:width", content: "740" },
-        { property: "og:image:height", content: "300" },
-        { hid: 'og-url', property: 'og:url', content: `${this.$config.axios.browserBaseURL}/articles/${this.$route.params.slug}` },
-        { hid: 't-type', name: 'twitter:card', content: 'summary_large_image' },
-      ],
-    }
+      { name: "twitter:label1", content: "Written by" },
+      { name: "twitter:data1", content: "Gabriel Caiana" },
+      { name: "twitter:label2", content: "Filed under" },
+    ],
+    link: [
+      {
+        hid: "canonical",
+        rel: "canonical",
+        href: `https://gabrielcaiana.com/articles/${this.$route.params.slug}`,
+      },
+    ],
+  };
+},
+
+  computed: {
+    meta() {
+      const metaData = {
+        type: 'article',
+        title: this.article.title,
+        description: this.article.description,
+        url: `${this.$config.axios.browserBaseURL}/articles/${this.$route.params.slug}`,
+        mainImage: this.article.img,
+      }
+
+      return getSiteMeta(metaData)
+    },
   },
+
   methods: {
     formatDate,
   },
-
 }
 </script>
