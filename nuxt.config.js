@@ -1,31 +1,42 @@
+import global from './utils/global'
 import getRoutes from './utils/getRoutes.js'
 import getSiteMeta from './utils/getSiteMeta'
 
 const meta = getSiteMeta();
 
 export default {
+  target: 'static',
   head: {
     htmlAttrs: {
       lang: 'pt-br',
     },
     meta: [
       ...meta,
-      { charset: "utf-8" },
-      { name: "HandheldFriendly", content: "True" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { property: "og:site_name", content: "Gabriel Caiana" },
-      { property: "og:image:width", content: "740" },
-      { property: "og:image:height", content: "300" },
-      { name: "twitter:site", content: "@gabrielgueedes" },
-      { name: "twitter:card", content: "summary_large_image" },
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: global.siteDesc || '',
+      },
+      { property: 'og:site_name', content: global.siteName || '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: global.siteDesc || '',
+      },
+      { property: 'og:image:width', content: '740' },
+      { property: 'og:image:height', content: '300' },
+      { name: 'twitter:site', content: global.siteName || '' },
+      { name: 'twitter:card', content: 'summary_large_image' },
     ],
     link: [
       {
-        hid: "canonical",
-        rel: "canonical",
-        href: process.env.BASE_URL,
+        hid: 'canonical',
+        rel: 'canonical',
+        href: global.siteUrl,
       },
-    ]
+    ],
   },
 
   css: [
@@ -34,8 +45,6 @@ export default {
     '@/assets/css/base.css',
     '@/assets/css/theme.css',
   ],
-
-  target: 'static',
 
   content: {
     nestedProperties: ['author.name'],
@@ -93,7 +102,7 @@ export default {
     },
     manifest: {
       name: 'Gabriel Caiana - Website',
-      lang: 'en',
+      lang: 'pt-br',
       useWebmanifestExtension: false,
     },
   },
@@ -103,12 +112,9 @@ export default {
   plugins: ['@/plugins/projects', '@/plugins/jobs'],
 
   sitemap: {
-    hostname:
-      process.env.NODE_ENV === 'production'
-        ? process.env.BASE_URL
-        : 'http://localhost:3000',
-  },
-  routes() {
-    return getRoutes()
-  },
+    hostname: global.siteUrl,
+    routes() {
+      return getRoutes()
+    },
+  }
 }

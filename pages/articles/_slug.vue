@@ -27,6 +27,7 @@
 
 <script>
 import getSiteMeta from '../../utils/getSiteMeta'
+import global from '@/utils/global'
 import { formatDate } from '@/utils/date'
 
 export default {
@@ -42,41 +43,40 @@ export default {
     return { article, prev, next }
   },
 
-head() {
-  return {
-    title: this.article.title,
-    meta: [
-      ...this.meta,
-      {
-        property: "article:published_time",
-        content: this.article.createdAt,
-      },
-      {
-        property: "article:modified_time",
-        content: this.article.updatedAt,
-      },
-
-      { name: "twitter:label1", content: "Written by" },
-      { name: "twitter:data1", content: "Gabriel Caiana" },
-      { name: "twitter:label2", content: "Filed under" },
-    ],
-    link: [
-      {
-        hid: "canonical",
-        rel: "canonical",
-        href: `https://gabrielcaiana.com/articles/${this.$route.params.slug}`,
-      },
-    ],
-  };
-},
+  head() {
+    return {
+      title: this.article.title,
+      meta: [
+        ...this.meta,
+        {
+          property: 'article:published_time',
+          content: this.article.createdAt,
+        },
+        {
+          property: 'article:modified_time',
+          content: this.article.updatedAt,
+        },
+        { name: 'twitter:label1', content: 'Written by' },
+        { name: 'twitter:data1', content: global.author || '' },
+        { name: 'twitter:label2', content: 'Filed under' },
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `${this.$config.axios.browserBaseURL}/articles/${this.$route.params.slug}`,
+        },
+      ],
+    }
+  },
 
   computed: {
     meta() {
       const metaData = {
         type: 'article',
+        url: `${this.$config.axios.browserBaseURL}/articles/${this.$route.params.slug}`,
         title: this.article.title,
         description: this.article.description,
-        url: `${this.$config.axios.browserBaseURL}/articles/${this.$route.params.slug}`,
         mainImage: this.article.img,
       }
 
