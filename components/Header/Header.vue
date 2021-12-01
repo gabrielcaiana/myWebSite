@@ -22,8 +22,8 @@ export default {
     return {
       menus: [
         { name: 'Home', path: '/' },
-        { name: 'About', path: '/about' },
-        { name: 'Projects', path: '/projects' },
+        { name: 'Sobre', path: '/about' },
+        { name: 'Projetos', path: '/projects' },
         { name: 'Blog', path: '/articles/page' },
       ],
 

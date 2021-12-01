@@ -2,9 +2,9 @@ import getRoutes from './utils/getRoutes.js'
 
 export default {
   head: {
-    titleTemplate: 'Gabriel Caiana: %s',
+    titleTemplate: 'Gabriel Caiana',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'pt-br',
     },
     meta: [
       {

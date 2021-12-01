@@ -75,7 +75,7 @@
           <button
             class="py-2 px-4 mt-4 bg-blue-500 text-white rounded-md shadow-xl"
           >
-            Learn More
+            Ler mais
           </button>
         </a>
         <div

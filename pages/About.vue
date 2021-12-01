@@ -1,6 +1,6 @@
 <template>
   <Container>
-    <h1>Experience</h1>
+    <h1>Experiência</h1>
     <ul>
       <li
         v-for="(job, index) in jobs"

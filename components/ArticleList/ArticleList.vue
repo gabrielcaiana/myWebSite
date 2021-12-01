@@ -37,7 +37,7 @@
                 mt-2
               "
             >
-              Read more<span
+              Ler mais<span
                 class="
                   text-blue-500
                   hover:text-blue-700

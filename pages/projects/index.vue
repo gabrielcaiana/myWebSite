@@ -1,6 +1,6 @@
 <template>
   <Container>
-    <h1>Projects</h1>
+    <h1>Projetos</h1>
     <section class="max-w-7xl mx-auto mb-12">
       <article>
         <section
@@ -37,7 +37,7 @@
             "
             @click="loadMore"
           >
-            Load more
+            Carregar mais
           </button>
         </div>
       </article>
