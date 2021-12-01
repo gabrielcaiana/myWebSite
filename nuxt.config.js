@@ -1,4 +1,7 @@
 import getRoutes from './utils/getRoutes.js'
+import getSiteMeta from './utils/getSiteMeta'
+
+const meta = getSiteMeta();
 
 export default {
   head: {
@@ -7,10 +10,23 @@ export default {
       lang: 'pt-br',
     },
     meta: [
-      {
-        charset: 'utf-8',
-      },
+      ...meta,
+      { charset: "utf-8" },
+      { name: "HandheldFriendly", content: "True" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { property: "og:site_name", content: "Gabriel Caiana" },
+      { property: "og:image:width", content: "740" },
+      { property: "og:image:height", content: "300" },
+      { name: "twitter:site", content: "@gabrielgueedes" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    link: [
+      {
+        hid: "canonical",
+        rel: "canonical",
+        href: process.env.BASE_URL,
+      },
+    ]
   },
 
   css: [
