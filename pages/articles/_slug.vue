@@ -32,15 +32,19 @@ import { formatDate } from '@/utils/date'
 
 export default {
   async asyncData({ $content, params }) {
-    const article = await $content('articles', params.slug).fetch()
+    try {
+      const article = await $content('articles', params.slug).fetch()
 
-    const [prev, next] = await $content('articles')
-      .only(['title', 'slug'])
-      .sortBy('createdAt', 'asc')
-      .surround(params.slug)
-      .fetch()
+      const [prev, next] = await $content('articles')
+        .only(['title', 'slug'])
+        .sortBy('createdAt', 'asc')
+        .surround(params.slug)
+        .fetch()
 
-    return { article, prev, next }
+      return { article, prev, next }
+    } catch (err) {
+      console.error(err)
+    }
   },
 
   head() {
