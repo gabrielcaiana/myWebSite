@@ -5,7 +5,6 @@ import getSiteMeta from './utils/getSiteMeta'
 const meta = getSiteMeta();
 
 export default {
-  target: 'static',
   head: {
     htmlAttrs: {
       lang: 'pt-br',
@@ -74,6 +73,7 @@ export default {
     '@nuxtjs/sitemap',
     '@nuxtjs/google-analytics',
     '@nuxtjs/pwa',
+    '@nuxtjs/proxy'
   ],
 
   googleAnalytics: {
@@ -85,6 +85,11 @@ export default {
       process.env.NODE_ENV === 'production'
         ? process.env.BASE_URL
         : 'http://localhost:3000',
+    proxy: true,
+  },
+
+  proxy: {
+    '/api/': { target: process.env.BASE_URL, pathRewrite: {'^/api/': ''}, changeOrigin: true }
   },
 
   publicRuntimeConfig: {
