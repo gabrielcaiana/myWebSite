@@ -1,5 +1,5 @@
 import global from './utils/global'
-import getRoutes from './utils/getRoutes.js'
+import getRoutes from './utils/getRoutes'
 import getSiteMeta from './utils/getSiteMeta'
 
 const meta = getSiteMeta()
@@ -16,7 +16,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: global.siteDesc || '',
+        content: global.siteDesc || ''
       },
       { property: 'og:site_name', content: global.siteName || '' },
       {
@@ -27,7 +27,7 @@ export default {
       { property: 'og:image:width', content: '740' },
       { property: 'og:image:height', content: '300' },
       { name: 'twitter:site', content: global.siteName || '' },
-      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:card', content: 'summary_large_image' }
     ],
     link: [
       {
@@ -104,7 +104,7 @@ export default {
 
   pwa: {
     pwa: {
-      icon: false,
+      icon: false
     },
     manifest: {
       name: 'Gabriel Caiana - Website',
@@ -119,7 +119,7 @@ export default {
 
   sitemap: {
     hostname: global.siteUrl,
-    routes() {
+    routes () {
       return getRoutes()
     }
   }

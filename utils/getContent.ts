@@ -1,4 +1,4 @@
-export default async ($content, params, error) => {
+export default async ($content: any, params: any, error: any) => {
   const currentPage = parseInt(params.page)
 
   const perPage = 4
