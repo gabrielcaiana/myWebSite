@@ -2,7 +2,7 @@ import global from './utils/global'
 import getRoutes from './utils/getRoutes'
 import getSiteMeta from './utils/getSiteMeta'
 
-const meta = getSiteMeta()
+const meta = getSiteMeta({})
 
 export default {
   head: {
@@ -115,7 +115,7 @@ export default {
 
   build: {},
 
-  plugins: ['@/plugins/projects', '@/plugins/jobs', { src: '@/plugins/hotjar', mode: 'client' }],
+  plugins: ['@/plugins/projects', '@/plugins/jobs', '@/plugins/hotjar.client'],
 
   sitemap: {
     hostname: global.siteUrl,
