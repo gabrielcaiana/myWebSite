@@ -1,16 +1,15 @@
-export default function(context, inject,) {
-
+export default function (context, inject) {
   const { $axios } = context
 
-  inject("jobsApi", {
+  inject('jobsApi', {
     getJobs
   })
 
-  async function getJobs() {
+  async function getJobs () {
     try {
-      const response = await $axios.$get("/api/jobs.json")
+      const response = await $axios.$get('/api/jobs.json')
       return response
-    } catch(err) {
+    } catch (err) {
       throw new Error(err)
     }
   }
