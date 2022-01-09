@@ -24,19 +24,20 @@
   </Container>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import { jobs } from '@/store'
-export default {
+export default Vue.extend({
   async asyncData() {
     await jobs.index()
     const allJobs = jobs.all
     return {
-      allJobs
+      allJobs,
     }
   },
 
   head: () => ({
     title: 'About',
   }),
-}
+})
 </script>

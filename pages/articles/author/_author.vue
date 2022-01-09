@@ -20,11 +20,13 @@
   </Container>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import { formatDate } from '@/utils/date'
-export default {
-  async asyncData({ $content, params }) {
-    const articles = await $content('articles', params.slug)
+import { Article } from '@/models'
+export default Vue.extend({
+  async asyncData({ $content, params }: any) {
+    const articles: Article = await $content('articles', params.slug)
       .where({
         'author.name': {
           $regex: [params.author, 'i'],
@@ -46,5 +48,5 @@ export default {
   methods: {
     formatDate,
   },
-}
+})
 </script>

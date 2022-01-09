@@ -25,13 +25,15 @@
   </article>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import getSiteMeta from '../../utils/getSiteMeta'
 import global from '@/utils/global'
 import { formatDate } from '@/utils/date'
+import { Article } from '@/models'
 
-export default {
-  async asyncData({ $content, params }) {
+export default Vue.extend({
+  async asyncData({ $content, params }: any) {
     try {
       const article = await $content('articles', params.slug).fetch()
 
@@ -42,12 +44,18 @@ export default {
         .fetch()
 
       return { article, prev, next }
-    } catch (err) {
-      console.error(err)
+    } catch (err: any) {
+      throw new Error(err)
     }
   },
 
-  head() {
+  data() {
+    return {
+      article: {} as Article,
+    }
+  },
+
+  head(): object {
     return {
       title: this.article.title,
       meta: [
@@ -75,7 +83,7 @@ export default {
   },
 
   computed: {
-    meta() {
+    meta(): any {
       const metaData = {
         type: 'article',
         url: `${this.$config.axios.browserBaseURL}/articles/${this.$route.params.slug}`,
@@ -91,5 +99,5 @@ export default {
   methods: {
     formatDate,
   },
-}
+})
 </script>
