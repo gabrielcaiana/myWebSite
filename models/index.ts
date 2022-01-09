@@ -1,2 +1,2 @@
-export * from './Jobs'
-export * from './Projects'
+export * from './Job'
+export * from './Project'

@@ -3,7 +3,7 @@
     <h1>Experiência</h1>
     <ul>
       <li
-        v-for="(job, index) in jobs"
+        v-for="(job, index) in allJobs"
         :key="index"
         class="lg:flex lg:flex-row mb-4 sm:flex md:flex-col md:items-start"
       >
@@ -25,12 +25,13 @@
 </template>
 
 <script>
+import { jobs } from '@/store'
 export default {
-  async asyncData({ $jobsApi }) {
-    const jobsResponse = await $jobsApi.getJobs()
-
+  async asyncData() {
+    await jobs.index()
+    const allJobs = jobs.all
     return {
-      jobs: jobsResponse,
+      allJobs
     }
   },
 

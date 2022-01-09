@@ -115,7 +115,7 @@ export default {
 
   build: {},
 
-  plugins: ['@/plugins/projects', '@/plugins/jobs', '@/plugins/hotjar.client'],
+  plugins: ['@/plugins/hotjar.client', '@/plugins/accessor'],
 
   sitemap: {
     hostname: global.siteUrl,

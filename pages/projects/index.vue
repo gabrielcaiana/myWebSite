@@ -46,12 +46,14 @@
 </template>
 
 <script>
+import { projects } from '@/store'
 export default {
-  async asyncData({ $projectsApi }) {
-    const projectResponse = await $projectsApi.getProjects()
+  async asyncData() {
+    await projects.index()
+    const allProjects = projects.all
 
     return {
-      cards: projectResponse,
+      allProjects
     }
   },
 
@@ -69,12 +71,12 @@ export default {
   
   computed: {
     filteredProjects() {
-      return this.cards.slice(0, this.page * this.perPage)
+      return this.allProjects.slice(0, this.page * this.perPage)
     }
   },
 
   mounted() {
-    this.lastPage = Math.ceil(this.cards.length / this.perPage)
+    this.lastPage = Math.ceil(this.allProjects.length / this.perPage)
   },
 
   methods: {

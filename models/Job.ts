@@ -1,4 +1,4 @@
-export interface Jobs {
+export interface Job {
   ocupation: string,
   name: string,
   image: string,
