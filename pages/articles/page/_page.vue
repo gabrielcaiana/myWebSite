@@ -5,7 +5,7 @@
 <script>
 import getContent from '@/utils/getContent'
 export default {
-  async asyncData({ $content, app, params, error }) {
+  async asyncData({ $content, params, error }) {
     try {
       const content = await getContent($content, params, error)
       return {
@@ -13,7 +13,7 @@ export default {
         paginatedArticles: content.paginatedArticles,
       }
     } catch (err) {
-      console.error(err)
+      throw new Error(err)
     }
   },
 
