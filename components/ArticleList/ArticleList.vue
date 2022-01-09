@@ -8,12 +8,7 @@
       >
         <NuxtLink
           :to="`/articles/${article.slug}`"
-          class="
-            md:grid md:gap-4 md:grid-cols-2
-            flex
-            items-center
-            flex flex-col
-          "
+          class="md:grid md:gap-4 md:grid-cols-2 flex items-center flex flex-col"
         >
           <img
             v-if="article.img"
@@ -27,24 +22,10 @@
             </h2>
             <p class="text-lg">{{ article.description }}</p>
             <p
-              class="
-                font-bold
-                text-blue-500
-                hover:text-blue-700
-                transition
-                duration-300
-                ease-in-out
-                mt-2
-              "
+              class="font-bold text-blue-500 hover:text-blue-700 transition duration-300 ease-in-out mt-2"
             >
               Ler mais<span
-                class="
-                  text-blue-500
-                  hover:text-blue-700
-                  transition
-                  duration-300
-                  ease-in-out
-                "
+                class="text-blue-500 hover:text-blue-700 transition duration-300 ease-in-out"
                 >&hellip;</span
               >
             </p>
@@ -58,8 +39,9 @@
   </Container>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
   name: 'ArticleList',
   props: {
     articles: {
@@ -70,6 +52,6 @@ export default {
       type: Number,
       default: 0,
     },
-  }
-}
+  },
+})
 </script>

@@ -9,19 +9,20 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
   data: () => ({
     show: false,
   }),
   methods: {
     change() {
       const click = document.getElementById('pencet')
-      click.classList.toggle('Diam')
+      click?.classList.toggle('Diam')
       this.show = !this.show
-    }
+    },
   },
-}
+})
 </script>
 
 <style lang="css" scoped>

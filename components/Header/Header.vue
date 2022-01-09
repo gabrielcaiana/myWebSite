@@ -11,13 +11,14 @@
           <nuxt-link :to="menu.path" v-text="menu.name"></nuxt-link>
         </li>
       </ul>
-    <HamburguerMenu v-if="isMobile.width < 900" />
+      <HamburguerMenu v-if="isMobile.width < 900" />
     </div>
   </header>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
   data() {
     return {
       menus: [
@@ -29,13 +30,14 @@ export default {
 
       window: {
         width: 0,
+        height: 0
       },
     }
   },
   computed: {
-    isMobile() {
+    isMobile(): object {
       return this.window
-    }
+    },
   },
   mounted() {
     window.addEventListener('resize', this.handleResize)
@@ -50,5 +52,5 @@ export default {
       this.window.height = window.innerHeight
     },
   },
-}
+})
 </script>

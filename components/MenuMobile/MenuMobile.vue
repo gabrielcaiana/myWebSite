@@ -12,8 +12,9 @@
   </transition>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
   props: {
     show: {
       type: Boolean,
@@ -29,16 +30,16 @@ export default {
         { name: 'Sobre', path: '/about' },
         { name: 'Projetos', path: '/projects' },
         { name: 'Blog', path: '/articles' },
-      ]
+      ],
     }
   },
 
   methods: {
     close() {
       this.$emit('close')
-    }
+    },
   },
-}
+})
 </script>
 
 <style lang="css" scoped>
