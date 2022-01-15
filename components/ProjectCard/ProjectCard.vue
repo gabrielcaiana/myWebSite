@@ -27,7 +27,7 @@
           duration-300
           ease-in-out
         "
-        :style="`background-image: url('${card.cover}');`"
+        :style="`background-image: url('${card.cover}')`" 
       >
         <div
           class="

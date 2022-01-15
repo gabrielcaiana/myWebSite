@@ -1,14 +1,22 @@
 {
   "root": true,
-  "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint"
-  ],
+  "env": {
+    "node": true
+  },
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser", 
+    "ecmaVersion": 2019, 
+    "sourceType": "module",
+    "ecmaFeatures": { "jsx": true }
+  },
+  "plugins": ["prettier", "@typescript-eslint", "vue"],
   "extends": [
-    "@nuxtjs/eslint-config-typescript",
     "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:vue/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier/vue"
   ],
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "off"
@@ -20,8 +28,14 @@
       "rules": {
         "@typescript-eslint/explicit-module-boundary-types": ["off"],
         "@typescript-eslint/no-explicit-any": "off",
-        "@typescript-eslint/no-var-requires": 0
-      }
+        "@typescript-eslint/no-var-requires": 0,
+        "no-unused-vars": "off",
+        "vue/multi-word-component-name": "off",
+        "vue/no-multiple-template-root": "off",
+        "vue/no-v-model-argument": "off",
+        "vue/valid-template-root": "off"
+      },
+      "extends": "plugin:@typescript-eslint/recommended-requiring-type-checking"
     }
   ]
 }
