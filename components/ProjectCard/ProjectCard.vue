@@ -27,8 +27,11 @@
           duration-300
           ease-in-out
         "
-        :style="`background-image: url('${card.cover}')`" 
       >
+       <img
+          :src="require(`@/assets${card.cover}`)"
+          :alt="card.name"
+        />
         <div
           class="
             absolute
