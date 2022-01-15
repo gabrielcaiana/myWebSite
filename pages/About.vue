@@ -3,13 +3,13 @@
     <h1>Experiência</h1>
     <ul>
       <li
-        v-for="(job, index) in jobs"
+        v-for="(job, index) in allJobs"
         :key="index"
         class="lg:flex lg:flex-row mb-4 sm:flex md:flex-col md:items-start"
       >
         <img
           class="rounded-xl object-cover mr-12"
-          :src="job.image"
+          :src="require(`../assets${job.image}`)"
           :alt="job.name"
         />
 
@@ -24,18 +24,20 @@
   </Container>
 </template>
 
-<script>
-export default {
-  async asyncData({ $jobsApi }) {
-    const jobsResponse = await $jobsApi.getJobs()
-
+<script lang="ts">
+import Vue from 'vue'
+import { jobs } from '@/store'
+export default Vue.extend({
+  async asyncData() {
+    await jobs.index()
+    const allJobs = jobs.all
     return {
-      jobs: jobsResponse,
+      allJobs,
     }
   },
 
   head: () => ({
-    title: 'About',
+    title: 'Sobre',
   }),
-}
+})
 </script>

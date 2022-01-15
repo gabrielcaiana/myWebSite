@@ -1,13 +1,13 @@
 import global from './utils/global'
-import getRoutes from './utils/getRoutes.js'
+import getRoutes from './utils/getRoutes'
 import getSiteMeta from './utils/getSiteMeta'
 
-const meta = getSiteMeta();
+const meta = getSiteMeta({})
 
 export default {
   head: {
     htmlAttrs: {
-      lang: 'pt-br',
+      lang: 'pt-br'
     },
     meta: [
       ...meta,
@@ -16,42 +16,42 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: global.siteDesc || '',
+        content: global.siteDesc || ''
       },
       { property: 'og:site_name', content: global.siteName || '' },
       {
         hid: 'description',
         name: 'description',
-        content: global.siteDesc || '',
+        content: global.siteDesc || ''
       },
       { property: 'og:image:width', content: '740' },
       { property: 'og:image:height', content: '300' },
       { name: 'twitter:site', content: global.siteName || '' },
-      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:card', content: 'summary_large_image' }
     ],
     link: [
       {
         hid: 'canonical',
         rel: 'canonical',
-        href: global.siteUrl,
-      },
-    ],
+        href: global.siteUrl
+      }
+    ]
   },
 
   css: [
     '@/assets/css/tailwind.css',
     '@/assets/css/slug.css',
     '@/assets/css/base.css',
-    '@/assets/css/theme.css',
+    '@/assets/css/theme.css'
   ],
 
   content: {
     nestedProperties: ['author.name'],
     markdown: {
       prism: {
-        theme: 'prism-themes/themes/prism-holi-theme.css',
-      },
-    },
+        theme: 'prism-themes/themes/prism-holi-theme.css'
+      }
+    }
   },
 
   layoutTransition: 'slide',
@@ -63,6 +63,7 @@ export default {
     'nuxt-gsap-module',
     '@nuxtjs/color-mode',
     '@nuxtjs/svg',
+    '@nuxt/typescript-build'
   ],
 
   modules: [
@@ -77,7 +78,7 @@ export default {
   ],
 
   googleAnalytics: {
-    id: process.env.GOOGLE_ANALYTICS_ID,
+    id: process.env.GOOGLE_ANALYTICS_ID
   },
 
   axios: {
@@ -85,11 +86,11 @@ export default {
       process.env.NODE_ENV === 'production'
         ? process.env.BASE_URL
         : 'http://localhost:3000',
-    proxy: true,
+    proxy: true
   },
 
   proxy: {
-    '/api/': { target: process.env.BASE_URL, pathRewrite: {'^/api/': ''}, changeOrigin: true }
+    '/api/': { target: process.env.BASE_URL, pathRewrite: { '^/api/': '' }, changeOrigin: true }
   },
 
   publicRuntimeConfig: {
@@ -97,29 +98,29 @@ export default {
       browserBaseURL:
         process.env.NODE_ENV === 'production'
           ? process.env.BASE_URL
-          : 'http://localhost:3000',
-    },
+          : 'http://localhost:3000'
+    }
   },
 
   pwa: {
     pwa: {
-      icon: false,
+      icon: false
     },
     manifest: {
       name: 'Gabriel Caiana - Website',
       lang: 'pt-br',
-      useWebmanifestExtension: false,
-    },
+      useWebmanifestExtension: false
+    }
   },
 
   build: {},
 
-  plugins: ['@/plugins/projects', '@/plugins/jobs', { src: '@/plugins/hotjar', mode: 'client'}],
+  plugins: ['@/plugins/hotjar.client', '@/plugins/accessor'],
 
   sitemap: {
     hostname: global.siteUrl,
-    routes() {
+    routes () {
       return getRoutes()
-    },
+    }
   }
 }

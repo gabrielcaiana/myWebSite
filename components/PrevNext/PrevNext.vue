@@ -19,17 +19,18 @@
   </div>
 </template>
 
-<script>
-  export default {
-    props: {
-      prev: {
-        type: Object,
-        default: () => null
-      },
-      next: {
-        type: Object,
-        default: () => null
-      }
-    }
-  }
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  props: {
+    prev: {
+      type: Object,
+      default: () => null,
+    },
+    next: {
+      type: Object,
+      default: () => null,
+    },
+  },
+})
 </script>
