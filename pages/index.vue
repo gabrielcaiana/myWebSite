@@ -23,7 +23,7 @@
 import Vue from 'vue'
 export default Vue.extend({
   head: () => ({
-    title: 'Home',
+    title: 'Início',
   }),
 })
 </script>

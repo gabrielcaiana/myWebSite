@@ -37,7 +37,7 @@ export default Vue.extend({
   },
 
   head: () => ({
-    title: 'About',
+    title: 'Sobre',
   }),
 })
 </script>

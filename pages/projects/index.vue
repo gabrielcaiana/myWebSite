@@ -53,7 +53,7 @@ export default Vue.extend({
   },
 
   head: () => ({
-    title: 'Projects',
+    title: 'Projetos',
   }),
 
   computed: {

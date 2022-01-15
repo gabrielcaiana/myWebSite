@@ -2,33 +2,14 @@
   {
     "ocupation": "Front-end Developer",
     "name": "Petlove",
-<<<<<<< HEAD
-<<<<<<< HEAD
     "image": "/images/petlove.png",
     "period": "Nov. 2021 -  No momento",
-=======
-    "image": "../../assets/images/petlove.png",
-=======
-    "image": "/images/petlove.png",
->>>>>>> f4c403e (chore: confi projects and jobs images)
-    "period": "Nov. 2021 -  O momento",
->>>>>>> a865efa (test: config eslint)
     "description": "front-end developer."
   },
   {
     "ocupation": "Front-end Developer | UI Designer",
-    "name": "OnClass",
-<<<<<<< HEAD
-<<<<<<< HEAD
     "image": "/images/onclass.png",
     "period": "Sep. 2021 - No momento",
-=======
-    "image": "../assets/images/onclass.png",
-=======
-    "image": "/images/onclass.png",
->>>>>>> f4c403e (chore: confi projects and jobs images)
-    "period": "Sep. 2021 - O moment",
->>>>>>> a865efa (test: config eslint)
     "description": "front-end developer e UI Designer."
   },
   {

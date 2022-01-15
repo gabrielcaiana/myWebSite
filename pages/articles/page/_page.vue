@@ -19,7 +19,7 @@ export default Vue.extend({
   },
 
   head: () => ({
-    title: 'Articles',
+    title: 'Artigos',
   }),
 })
 </script>
