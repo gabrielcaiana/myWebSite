@@ -13,9 +13,10 @@ exports[`ArticleList create Snapshot 1`] = `
       <a
         class="md:grid md:gap-4 md:grid-cols-2 flex items-center flex flex-col"
       >
-        <img
+        <nuxt-img
           alt=""
           class="mb-4 border rounded"
+          loading="lazy"
           src="https://miro.medium.com/max/1400/1*qel9XXYWGOh-bcewpFsu8w.png"
         />
          
@@ -54,9 +55,10 @@ exports[`ArticleList create Snapshot 1`] = `
       <a
         class="md:grid md:gap-4 md:grid-cols-2 flex items-center flex flex-col"
       >
-        <img
+        <nuxt-img
           alt=""
           class="mb-4 border rounded"
+          loading="lazy"
           src="https://miro.medium.com/max/1400/1*qel9XXYWGOh-bcewpFsu8w.png"
         />
          
