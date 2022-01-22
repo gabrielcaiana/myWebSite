@@ -9,7 +9,7 @@
       >
         <img
           class="rounded-xl object-cover mr-12"
-          :src="require(`../assets${job.image}`)"
+          :src="job.image"
           :alt="job.name"
         />
 
