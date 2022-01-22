@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  * {
-    @apply font-mono;
-  }
   h1 {
     @apply text-4xl;
     @apply py-8;
