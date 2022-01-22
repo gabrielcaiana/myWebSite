@@ -5,7 +5,6 @@
         <Person />
         <h1>Olá, meu nome é Gabriel!</h1>
 
-        teste
         <p>
           Sou um desenvolvedor de software de 25 anos, trabalho com JavaScript |
           TypeScript | Node | Vue e Nuxt. Apaixonado por tecnologia, inovação e
@@ -26,10 +25,6 @@ import Vue from 'vue'
 export default Vue.extend({
   head: () => ({
     title: 'Início',
-  }),
-
-  mounted() {
-    console.log(this.$config.ngrok.url)
-  }
+  })
 })
 </script>
