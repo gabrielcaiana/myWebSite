@@ -7,8 +7,9 @@ exports[`Author create Snapshot 1`] = `
   <a
     class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
   >
-    <img
+    <nuxt-img
       class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
+      loading="lazy"
       src="images/me.jpg"
     />
      
