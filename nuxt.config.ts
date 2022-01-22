@@ -63,7 +63,8 @@ export default {
     'nuxt-gsap-module',
     '@nuxtjs/color-mode',
     '@nuxtjs/svg',
-    '@nuxt/typescript-build'
+    '@nuxt/typescript-build',
+    '@/modules/ngrok'
   ],
 
   modules: [
@@ -111,6 +112,10 @@ export default {
       lang: 'pt-br',
       useWebmanifestExtension: false
     }
+  },
+
+  ngrok: {
+    token: process.env.NGROK_TOKEN
   },
 
   build: {},
