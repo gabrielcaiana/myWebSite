@@ -7,7 +7,8 @@
         :key="index"
         class="lg:flex lg:flex-row mb-4 sm:flex md:flex-col md:items-start"
       >
-        <img
+        <nuxt-img 
+          loading="lazy"
           class="rounded-xl object-cover mr-12"
           :src="job.image"
           :alt="job.name"

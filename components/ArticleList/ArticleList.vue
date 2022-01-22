@@ -10,8 +10,9 @@
           :to="`/articles/${article.slug}`"
           class="md:grid md:gap-4 md:grid-cols-2 flex items-center flex flex-col"
         >
-          <img
+          <nuxt-img 
             v-if="article.img"
+            loading="lazy"
             :src="article.img"
             alt=""
             class="mb-4 border rounded"
