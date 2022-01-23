@@ -4,11 +4,11 @@
       :to="`/articles/author/${author.name}`"
       class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
     >
-      <nuxt-img 
+      <img 
         v-if="author.image"
-        loading="lazy"
         class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
         :src="author.image"
+        :alt="author.name"
       />
       <div class="flex flex-col m-4">
         <h4 class="font-semibold">Author</h4>
