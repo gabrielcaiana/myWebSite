@@ -9,6 +9,7 @@
       >
         <nuxt-img 
           loading="lazy"
+          provider="static"
           class="rounded-xl object-cover mr-12"
           :src="job.image"
           :alt="job.name"
