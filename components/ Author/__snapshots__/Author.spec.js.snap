@@ -10,6 +10,7 @@ exports[`Author create Snapshot 1`] = `
     <img
       alt="Gabriel Caiana"
       class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
+      loading="lazy"
       src="images/me.jpg"
     />
      
