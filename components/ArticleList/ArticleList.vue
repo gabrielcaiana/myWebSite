@@ -14,6 +14,7 @@
             v-if="article.img"
             :src="article.img"
             :alt="article.title"
+            loading="lazy"
             class="mb-4 border rounded"
           />
           <div>

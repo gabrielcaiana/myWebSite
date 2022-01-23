@@ -6,6 +6,7 @@
     >
       <img 
         v-if="author.image"
+        loading="lazy"
         class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
         :src="author.image"
         :alt="author.name"

@@ -64,8 +64,7 @@ export default {
     '@nuxtjs/color-mode',
     '@nuxtjs/svg',
     '@nuxt/typescript-build',
-    '@/modules/ngrok',
-    '@nuxt/image',
+    '@/modules/ngrok'
   ],
 
   modules: [

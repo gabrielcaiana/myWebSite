@@ -6,7 +6,7 @@
       <article
         class="relative w-auto h-64 bg-cover bg-center group overflow-hidden shadow-lg hover:shadow-2xl rounded-t-lg transition duration-300 ease-in-out"
       >
-        <nuxt-img loading="lazy" provider="static" :src="card.cover" :alt="card.name" />
+        <img loading="lazy" :src="card.cover" :alt="card.name" />
         <div
           class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out"
         ></div>

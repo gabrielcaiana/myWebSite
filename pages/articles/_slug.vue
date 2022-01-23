@@ -2,7 +2,7 @@
   <article class="container mx-auto max-w-screen-md p-5">
     <h1 v-text="article.title"></h1>
     <p v-text="article.description"></p>
-    <img :src="article.img" :alt="article.alt" />
+    <img loading="lazy" :src="article.img" :alt="article.alt" />
     <p class="py-6">Post atualizado em: {{ formatDate(article.updatedAt) }}</p>
 
     <nav class="my-6">
