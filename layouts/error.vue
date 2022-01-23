@@ -4,7 +4,7 @@
       v-if="error.statusCode === 404"
       class="flex flex-col items-center justify-center"
     >
-      <h1>{{ error.message }}</h1>
+      <h1>Página nāo encontrada!</h1>
 
       <nuxt-link to="/">
         <button
@@ -24,7 +24,7 @@
             border-indigo-300
           "
         >
-          Back Home
+          Ir para o início
         </button>
       </nuxt-link>
     </div>

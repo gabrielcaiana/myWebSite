@@ -5,6 +5,7 @@ import getSiteMeta from './utils/getSiteMeta'
 const meta = getSiteMeta({})
 
 export default {
+  target: 'static',
   head: {
     htmlAttrs: {
       lang: 'pt-br'
