@@ -1,5 +1,12 @@
 [
   {
+    "cover": "/images/projects/screen-recorder.png",
+    "title": "Gravador de tela",
+    "description": "Esse projeto é um gravador de tela e áudio desenvolvido utilizando vue 3, utilizando a API de captura de mídia e a API de gravaçāo de audio e vídeo, além disso dando a possibilidade de realizar o download do arquivo",
+    "technologies": [ { "name": "VueJs", "color": "#00AC70" }],
+    "link": "https://github.com/gabrielcaiana/screen-recorder-vue3"
+  },
+  {
     "cover": "/images/projects/nuxtbnb.png",
     "title": "NuxtBnB",
     "description": "Esse é um clone do AirBnB pronto para produção. Comece a trabalhar com reservas, escolha de datas, pagamentos, galerias, usuários e muito mais, o projeto foi desenvolvido com nuxt, algolia, stripe, google maps e node.",
