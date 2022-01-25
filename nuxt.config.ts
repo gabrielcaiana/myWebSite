@@ -64,7 +64,8 @@ export default {
     '@nuxtjs/color-mode',
     '@nuxtjs/svg',
     '@nuxt/typescript-build',
-    '@/modules/ngrok'
+    '@/modules/ngrok',
+    '@nuxtjs/pwa'
   ],
 
   modules: [
@@ -74,7 +75,6 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/sitemap',
     '@nuxtjs/google-analytics',
-    '@nuxtjs/pwa',
     '@nuxtjs/proxy'
   ],
 
@@ -100,17 +100,6 @@ export default {
         process.env.NODE_ENV === 'production'
           ? process.env.BASE_URL
           : 'http://localhost:3000'
-    }
-  },
-
-  pwa: {
-    pwa: {
-      icon: false
-    },
-    manifest: {
-      name: 'Gabriel Caiana - Website',
-      lang: 'pt-br',
-      useWebmanifestExtension: false
     }
   },
 
