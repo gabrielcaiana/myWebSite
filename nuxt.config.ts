@@ -103,6 +103,14 @@ export default {
     }
   },
 
+  pwa: {
+    manifest: {
+      name: 'Gabriel Caiana',
+      short_name: 'Gabriel',
+      lang: 'pt-BR',
+    }
+  },
+
   ngrok: {
     token: process.env.NGROK_TOKEN
   },
