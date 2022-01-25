@@ -64,7 +64,8 @@ export default {
     '@nuxtjs/color-mode',
     '@nuxtjs/svg',
     '@nuxt/typescript-build',
-    '@/modules/ngrok'
+    '@/modules/ngrok',
+    '@nuxtjs/pwa'
   ],
 
   modules: [
