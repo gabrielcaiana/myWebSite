@@ -64,9 +64,7 @@ export default {
     '@nuxtjs/color-mode',
     '@nuxtjs/svg',
     '@nuxt/typescript-build',
-    '@/modules/ngrok',
-    '@nuxtjs/pwa'
-  ],
+    '@/modules/ngrok',  ],
 
   modules: [
     '@nuxtjs/axios',
@@ -75,7 +73,8 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/sitemap',
     '@nuxtjs/google-analytics',
-    '@nuxtjs/proxy'
+    '@nuxtjs/proxy',
+    '@nuxtjs/pwa'
   ],
 
   googleAnalytics: {
