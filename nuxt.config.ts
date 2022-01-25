@@ -64,8 +64,7 @@ export default {
     '@nuxtjs/color-mode',
     '@nuxtjs/svg',
     '@nuxt/typescript-build',
-    '@/modules/ngrok'
-  ],
+    '@/modules/ngrok',  ],
 
   modules: [
     '@nuxtjs/axios',
@@ -74,8 +73,8 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/sitemap',
     '@nuxtjs/google-analytics',
-    '@nuxtjs/pwa',
-    '@nuxtjs/proxy'
+    '@nuxtjs/proxy',
+    '@nuxtjs/pwa'
   ],
 
   googleAnalytics: {
@@ -104,13 +103,10 @@ export default {
   },
 
   pwa: {
-    pwa: {
-      icon: false
-    },
     manifest: {
-      name: 'Gabriel Caiana - Website',
-      lang: 'pt-br',
-      useWebmanifestExtension: false
+      name: 'Gabriel Caiana',
+      short_name: 'Gabriel',
+      lang: 'pt-BR',
     }
   },
 
