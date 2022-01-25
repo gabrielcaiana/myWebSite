@@ -64,9 +64,7 @@ export default {
     '@nuxtjs/color-mode',
     '@nuxtjs/svg',
     '@nuxt/typescript-build',
-    '@/modules/ngrok',
-    '@nuxtjs/pwa'
-  ],
+    '@/modules/ngrok',  ],
 
   modules: [
     '@nuxtjs/axios',
@@ -75,7 +73,8 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/sitemap',
     '@nuxtjs/google-analytics',
-    '@nuxtjs/proxy'
+    '@nuxtjs/proxy',
+    '@nuxtjs/pwa'
   ],
 
   googleAnalytics: {
@@ -100,6 +99,14 @@ export default {
         process.env.NODE_ENV === 'production'
           ? process.env.BASE_URL
           : 'http://localhost:3000'
+    }
+  },
+
+  pwa: {
+    manifest: {
+      name: 'Gabriel Caiana',
+      short_name: 'Gabriel',
+      lang: 'pt-BR',
     }
   },
 
