@@ -9,7 +9,8 @@ export default function ({ $config }, inject) {
 
   inject('algoliaApi', {
       getJobs,
-      getProjects
+      getProjects,
+      getAbout
   });
 
   async function getJobs () {
@@ -37,6 +38,22 @@ export default function ({ $config }, inject) {
       if(response.ok && response.status === 200) {
         const projects = await response.json()
         return projects.hits
+      } 
+  
+    } catch(error) {
+      console.log(error)
+    }
+  };
+
+  async function getAbout () {
+    try {
+        const response = await fetch(`https://${appId}-dsn.algolia.net/1/indexes/about/`,  {
+        headers,
+      })
+
+      if(response.ok && response.status === 200) {
+        const about = await response.json()
+        return about.hits[0]
       } 
   
     } catch(error) {

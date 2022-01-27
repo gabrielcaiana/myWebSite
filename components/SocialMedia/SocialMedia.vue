@@ -1,6 +1,6 @@
 <template>
   <ul class="flex">
-    <li v-for="(icon, index) of icons" :key="index" class="cursor-pointer">
+    <li v-for="(icon, index) of socialMedia" :key="index" class="cursor-pointer">
       <a :href="icon.url" target="_blank" rel="noopener">
         <component :is="`${icon.name}`" />
       </a>
@@ -17,28 +17,12 @@ export default {
     email: () => import(/* webpackChunkName: "email" */ '@/assets/icons/email.svg?inline'),
   },
 
-  data() {
-    return {
-      icons: [
-        {
-          name: 'twitter',
-          url: 'https://twitter.com/gabrielgueedes',
-        },
-        {
-          name: 'linkedin',
-          url: 'https://www.linkedin.com/in/gabrielcaiana/',
-        },
-        {
-          name: 'github',
-          url: 'https://github.com/gabrielcaiana',
-        },
-        {
-          name: 'email',
-          url: 'mailto:gabrielcaianaguedes@gmail.com',
-        },
-      ],
-    }
-  },
+    props: {
+    socialMedia: {
+      type: Array,
+      required: true
+    },
+  }
 }
 </script>
 
