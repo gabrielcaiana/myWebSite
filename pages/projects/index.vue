@@ -33,11 +33,10 @@
 import Vue from 'vue'
 import { projects } from '@/store'
 export default Vue.extend({
-  async asyncData() {
-    await projects.index()
-
+  async asyncData( { $algoliaApi }: any) {
+    const response = await $algoliaApi.getProjects();
+    projects.index(response)
     const allProjects = projects.all
-
     return {
       allProjects,
     }
