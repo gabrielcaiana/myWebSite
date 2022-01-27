@@ -1,4 +1,4 @@
-export default function ({ $config }, inject) {
+export default function ({ $config }: any, inject: any) {
   const appId = $config.algolia.appId
   const apiKey = $config.algolia.apiKey
 
