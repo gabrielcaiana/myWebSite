@@ -1,6 +1,5 @@
 import { Module, VuexModule, Mutation, Action } from 'vuex-module-decorators'
 import { Project } from '@/models'
-import { $axios } from '@/utils/nuxt-instance'
 
 @Module({ name: 'projects', stateFactory: true, namespaced: true })
 export default class Projects extends VuexModule {
@@ -16,8 +15,7 @@ export default class Projects extends VuexModule {
   }
 
   @Action
-  public async index() {
-    const projects = await $axios.$get('/api/projects.json')
+  public index(projects: []) {
     this.context.commit('SET_ALL', projects)
   }
 }

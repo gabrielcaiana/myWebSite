@@ -29,8 +29,9 @@
 import Vue from 'vue'
 import { jobs } from '@/store'
 export default Vue.extend({
-  async asyncData() {
-    await jobs.index()
+  async asyncData( { $algoliaApi }: any) {
+    const response = await $algoliaApi.getJobs();
+    jobs.index(response)
     const allJobs = jobs.all
     return {
       allJobs,
