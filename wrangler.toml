@@ -1,0 +1,10 @@
+account_id = "10292b14168cb4e2d4f98c84ad0f699e"
+name = "gabrielcaiana-website"
+type = "webpack"
+route = ''
+zone_id = '562c01f5e50a666c5c0b8302d699491f'
+usage_model = ''
+compatibility_flags = []
+workers_dev = true
+site = {bucket = "dist",entry-point = "workers-site"}
+compatibility_date = "2022-03-05"
