@@ -54,6 +54,10 @@ export default {
     },
   },
 
+  router: {
+    linkExactActiveClass: 'exact-active-link',
+  },
+
   layoutTransition: 'slide',
 
   components: [{ path: '@/components', pathPrefix: false }],
@@ -114,7 +118,7 @@ export default {
   privateRuntimeConfig: {
     algolia: {
       appId: process.env.APP_ID,
-      apiKey: process.env.API_KEY
+      apiKey: process.env.API_KEY,
     },
   },
 
@@ -132,7 +136,11 @@ export default {
 
   build: {},
 
-  plugins: ['@/plugins/hotjar.client', '@/plugins/accessor', '@/plugins/algolia'],
+  plugins: [
+    '@/plugins/hotjar.client',
+    '@/plugins/accessor',
+    '@/plugins/algolia',
+  ],
 
   sitemap: {
     hostname: global.siteUrl,

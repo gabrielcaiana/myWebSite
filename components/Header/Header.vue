@@ -1,7 +1,7 @@
 <template>
   <header class="flex justify-center items-center py-4">
     <div class="flex justify-between container px-6">
-      <nuxt-link to="/">Gabriel Caiana</nuxt-link>
+      <nuxt-link class="logo" to="/">Gabriel Caiana</nuxt-link>
       <ul v-if="isMobile.width > 901" class="flex">
         <li
           v-for="(menu, index) in menus"
@@ -30,7 +30,7 @@ export default Vue.extend({
 
       window: {
         width: 0,
-        height: 0
+        height: 0,
       },
     }
   },
@@ -54,3 +54,9 @@ export default Vue.extend({
   },
 })
 </script>
+
+<style lang="css" scoped>
+.logo {
+  color: white !important;
+}
+</style>
