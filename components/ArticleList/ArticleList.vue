@@ -10,7 +10,7 @@
           :to="`/articles/${article.slug}`"
           class="md:grid md:gap-4 md:grid-cols-2 flex items-center flex flex-col"
         >
-          <img 
+          <img
             v-if="article.img"
             :src="article.img"
             :alt="article.title"
