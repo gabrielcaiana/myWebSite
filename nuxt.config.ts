@@ -1,10 +1,11 @@
+import { defineNuxtConfig } from '@nuxt/bridge'
 import global from './utils/global'
 import getRoutes from './utils/getRoutes'
 import getSiteMeta from './utils/getSiteMeta'
 
 const meta = getSiteMeta({})
 
-export default {
+export default defineNuxtConfig({
   head: {
     htmlAttrs: {
       lang: 'pt-br',
@@ -58,7 +59,7 @@ export default {
     linkExactActiveClass: 'exact-active-link',
   },
 
-  layoutTransition: 'slide',
+  // layoutTransition: 'slide',
 
   components: [{ path: '@/components', pathPrefix: false }],
 
@@ -156,4 +157,4 @@ export default {
       return getRoutes()
     },
   },
-}
+})
