@@ -6,6 +6,7 @@ import getSiteMeta from './utils/getSiteMeta'
 const meta = getSiteMeta({})
 
 export default defineNuxtConfig({
+  builder: 'webpack',
   head: {
     htmlAttrs: {
       lang: 'pt-br',
@@ -68,8 +69,9 @@ export default defineNuxtConfig({
     'nuxt-gsap-module',
     '@nuxtjs/color-mode',
     '@nuxtjs/svg',
-    '@nuxt/typescript-build',
     '@/modules/ngrok',
+    '@nuxtjs/tailwindcss',
+    '@nuxt/postcss8',
   ],
 
   modules: [
@@ -143,7 +145,12 @@ export default defineNuxtConfig({
     token: process.env.NGROK_TOKEN,
   },
 
-  build: {},
+  build: {
+    postcss: {
+      // @ts-ignore: Unreachable code error
+      'postcss-import': {},
+    },
+  },
 
   plugins: [
     '@/plugins/hotjar.client',
