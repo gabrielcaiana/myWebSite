@@ -35,6 +35,7 @@ export default {
         rel: 'canonical',
         href: global.siteUrl,
       },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
     ],
   },
 
