@@ -15,10 +15,10 @@
 <script>
 export default {
   components: {
-    IconSystem:() => import('@/assets/icons/system.svg?inline'),
-    IconLight:() => import('@/assets/icons/light.svg?inline'),
-    IconDark:() => import('@/assets/icons/dark.svg?inline'),
-    IconSepia:() => import('@/assets/icons/sepia.svg?inline'),
+    IconSystem: () => import('@/assets/icons/system.svg?inline'),
+    IconLight: () => import('@/assets/icons/light.svg?inline'),
+    IconDark: () => import('@/assets/icons/dark.svg?inline'),
+    IconSepia: () => import('@/assets/icons/sepia.svg?inline'),
   },
 
   data() {
@@ -59,10 +59,10 @@ export default {
   top: -3px;
 }
 .feather.preferred {
-  border-color: var(--color-primary);
+  border-color: #8b5cf6;
   top: -3px;
 }
 .feather.selected {
-  color: var(--color-primary);
+  color: #8b5cf6;
 }
 </style>

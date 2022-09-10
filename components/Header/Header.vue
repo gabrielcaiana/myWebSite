@@ -1,16 +1,21 @@
 <template>
-  <header class="flex justify-center items-center py-4">
-    <div class="flex justify-between container px-6">
-      <nuxt-link class="logo" to="/">Gabriel Caiana</nuxt-link>
-      <ul v-if="isMobile.width > 901" class="flex">
+  <header class="flex justify-center items-center py-24">
+    <div class="flex items-center justify-center container">
+      <nuxt-link to="/">
+        <img width="170" src="/images/logo.svg" alt="Gabriel Caiana" />
+      </nuxt-link>
+      <!-- <ul
+        v-if="isMobile.width > 901"
+        class="flex items-center font-general-regular"
+      >
         <li
           v-for="(menu, index) in menus"
           :key="index"
-          class="pl-6 hover:text-blue-500 transition duration-300 ease-in-out"
+          class="pl-6 hover:text-purple-700 transition duration-300 ease-in-out"
         >
           <nuxt-link :to="menu.path" v-text="menu.name"></nuxt-link>
         </li>
-      </ul>
+      </ul> -->
       <HamburguerMenu v-if="isMobile.width < 900" />
     </div>
   </header>
@@ -56,7 +61,7 @@ export default Vue.extend({
 </script>
 
 <style lang="css" scoped>
-.logo {
-  color: white !important;
+header {
+  background: url('/images/cover.svg') no-repeat center center / cover;
 }
 </style>

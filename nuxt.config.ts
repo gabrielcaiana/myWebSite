@@ -43,6 +43,7 @@ export default {
     '@/assets/css/slug.css',
     '@/assets/css/base.css',
     '@/assets/css/theme.css',
+    '@/assets/css/fonts.css',
   ],
 
   content: {

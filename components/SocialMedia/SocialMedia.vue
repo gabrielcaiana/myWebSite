@@ -1,6 +1,10 @@
 <template>
   <ul class="flex">
-    <li v-for="(icon, index) of socialMedia" :key="index" class="cursor-pointer">
+    <li
+      v-for="(icon, index) of socialMedia"
+      :key="index"
+      class="cursor-pointer"
+    >
       <a :href="icon.url" target="_blank" rel="noopener">
         <component :is="`${icon.name}`" />
       </a>
@@ -11,18 +15,28 @@
 <script>
 export default {
   components: {
-    twitter: () => import(/* webpackChunkName: "twitter" */ '@/assets/icons/twitter.svg?inline'),
-    linkedin: () => import(/* webpackChunkName: "linkedin" */'@/assets/icons/linkedin.svg?inline'),
-    github: () => import(/* webpackChunkName: "github" */'@/assets/icons/github.svg?inline'),
-    email: () => import(/* webpackChunkName: "email" */ '@/assets/icons/email.svg?inline'),
+    twitter: () =>
+      import(
+        /* webpackChunkName: "twitter" */ '@/assets/icons/twitter.svg?inline'
+      ),
+    linkedin: () =>
+      import(
+        /* webpackChunkName: "linkedin" */ '@/assets/icons/linkedin.svg?inline'
+      ),
+    github: () =>
+      import(
+        /* webpackChunkName: "github" */ '@/assets/icons/github.svg?inline'
+      ),
+    email: () =>
+      import(/* webpackChunkName: "email" */ '@/assets/icons/email.svg?inline'),
   },
 
-    props: {
+  props: {
     socialMedia: {
       type: Array,
-      required: true
+      required: true,
     },
-  }
+  },
 }
 </script>
 
