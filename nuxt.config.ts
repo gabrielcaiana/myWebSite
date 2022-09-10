@@ -42,7 +42,6 @@ export default {
     '@/assets/css/tailwind.css',
     '@/assets/css/slug.css',
     '@/assets/css/base.css',
-    '@/assets/css/theme.css',
     '@/assets/css/fonts.css',
   ],
 
@@ -66,16 +65,15 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module',
     'nuxt-gsap-module',
-    '@nuxtjs/color-mode',
     '@nuxtjs/svg',
     '@nuxt/typescript-build',
+    '@nuxt/postcss8',
     '@/modules/ngrok',
   ],
 
   modules: [
     '@nuxtjs/axios',
     '@nuxt/content',
-    '@nuxtjs/tailwindcss',
     '@nuxtjs/dotenv',
     '@nuxtjs/sitemap',
     '@nuxtjs/google-analytics',
@@ -143,8 +141,6 @@ export default {
     token: process.env.NGROK_TOKEN,
   },
 
-  build: {},
-
   plugins: [
     '@/plugins/hotjar.client',
     '@/plugins/accessor',
@@ -155,6 +151,15 @@ export default {
     hostname: global.siteUrl,
     routes() {
       return getRoutes()
+    },
+  },
+
+  build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
     },
   },
 }

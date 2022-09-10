@@ -1,12 +1,14 @@
 <template>
   <header class="flex justify-center items-center py-24">
-    <div class="flex items-center justify-center container">
+    <div
+      class="flex justify-between items-center justify-center w-[864px] m-auto"
+    >
       <nuxt-link to="/">
         <img width="170" src="/images/logo.svg" alt="Gabriel Caiana" />
       </nuxt-link>
-      <!-- <ul
+      <ul
         v-if="isMobile.width > 901"
-        class="flex items-center font-general-regular"
+        class="flex items-center font-general-regular text-white"
       >
         <li
           v-for="(menu, index) in menus"
@@ -15,7 +17,7 @@
         >
           <nuxt-link :to="menu.path" v-text="menu.name"></nuxt-link>
         </li>
-      </ul> -->
+      </ul>
       <HamburguerMenu v-if="isMobile.width < 900" />
     </div>
   </header>

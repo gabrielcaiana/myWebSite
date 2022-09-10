@@ -1,5 +1,7 @@
 <template>
-  <div class="w-56 rounded-full p-2 border-2 border-purple-500 cursor-pointer">
+  <div
+    class="w-[300px] h-fit ml-6 rounded-md p-2 border-2 border-purple-500 cursor-pointer"
+  >
     <a
       target="_blank"
       rel="noopener"
@@ -7,7 +9,7 @@
     >
       <img
         loading="lazy"
-        class="rounded-full"
+        class="rounded-md"
         :src="avatar"
         alt="Gabriel Caiana"
       />
@@ -28,5 +30,3 @@ export default Vue.extend({
   },
 })
 </script>
-
-<style lang="scss" scoped></style>

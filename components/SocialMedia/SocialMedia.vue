@@ -40,18 +40,18 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="css" scoped>
 .feather {
   position: relative;
   top: 0px;
   cursor: pointer;
   padding: 7px;
-  margin: 2rem 0.5rem 4rem 0;
+  margin: 1rem 0;
   border-radius: 5px;
   transition: all 0.1s ease;
-  width: 50px;
-  height: 50px;
-  z-index: -1;
+  width: 32px;
+  height: 32px;
+  color: #ffffff;
 }
 .feather:hover {
   top: -3px;

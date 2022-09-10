@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-primary-900">
     <Header />
     <transition name="slide" mode="out-in">
       <Nuxt />
@@ -7,7 +7,3 @@
     <Footer />
   </div>
 </template>
-
-<script>
-export default {}
-</script>
