@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-[300px] h-fit ml-6 rounded-md p-2 border-2 border-purple-500 cursor-pointer"
+    class="w-[160px] md:w-[300px] h-fit md:ml-6 rounded-md p-2 border-2 border-purple-500 cursor-pointer"
   >
     <a
       target="_blank"

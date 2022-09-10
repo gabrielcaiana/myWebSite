@@ -1,13 +1,16 @@
 <template>
-  <Container class="flex items-center justify-center">
+  <div class="max-w-[864px] px-6 md:px-0 m-auto mb-40">
     <div
-      class="max-w-[864px] m-auto flex gap-4 py-6 bg-primary-800 absolute left-0 right-0 top-[200px] rounded-md shadow-lg"
+      class="max-w-[864px] m-auto flex items-center md:items-start flex-col md:flex-row gap-4 p-6 md:px-0 bg-primary-800 absolute left-0 right-0 top-[200px] rounded-md shadow-lg"
     >
       <Person :avatar="user.avatar" />
-      <div>
-        <h1 class="text-white text-2xl mb-3 font-general-medium">
-          Gabriel Caiana
-        </h1>
+      <div
+        class="flex flex-col items-center md:items-start text-center md:text-start"
+      >
+        <h1 class="text-white text-2xl font-general-medium">Gabriel Caiana</h1>
+        <span class="text-medium font-general-medium text-primary-100 mb-3"
+          >Desenvolvedor frontend e entusiasta de design.</span
+        >
         <p class="text-primary-200 font-general-regular">
           {{ user.description }}
         </p>
@@ -15,11 +18,11 @@
       </div>
     </div>
 
-    <div class="w-full flex flex-col mt-40">
+    <div class="w-full flex flex-col mt-[450px] md:mt-56">
       <h2 class="text-white text-2xl mb-8 font-general-medium">Publicações</h2>
       <ArticleList :articles="paginatedArticles" :total="allArticles.length" />
     </div>
-  </Container>
+  </div>
 </template>
 
 <script lang="ts">

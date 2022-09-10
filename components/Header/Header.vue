@@ -1,5 +1,5 @@
 <template>
-  <header class="flex justify-center items-center py-24">
+  <header class="flex justify-center items-center py-24 px-8">
     <div class="flex justify-between items-center w-[864px] m-auto">
       <nuxt-link to="/">
         <img width="170" src="/images/logo.svg" alt="Gabriel Caiana" />
@@ -29,7 +29,7 @@ export default Vue.extend({
       menus: [
         { name: 'Home', path: '/' },
         { name: 'Projetos', path: '/projects' },
-        { name: 'Sobre', path: '/about' },
+        { name: 'Carreira', path: '/career' },
       ],
 
       window: {

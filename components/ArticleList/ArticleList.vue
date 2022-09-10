@@ -4,7 +4,7 @@
       <li
         v-for="article of articles"
         :key="article.slug"
-        class="w-[416px] bg-primary-700 p-5 cursor-pointer transform transition duration-500 hover:scale-105"
+        class="w-[300px] md:w-[416px] bg-primary-700 p-5 cursor-pointer transform transition duration-500 hover:scale-105"
       >
         <NuxtLink :to="`/articles/${article.slug}`">
           <div>

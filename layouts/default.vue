@@ -1,10 +1,8 @@
 <template>
-  <div class="bg-primary-900">
+  <div class="bg-primary-900 min-h-screen">
     <Header />
     <transition name="slide" mode="out-in">
-      <main class="w-[864px] px-5 m-auto">
-        <Nuxt />
-      </main>
+      <Nuxt />
     </transition>
     <Footer />
   </div>
