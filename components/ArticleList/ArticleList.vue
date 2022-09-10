@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ul>
+    <ul class="flex flex-wrap gap-4">
       <li
         v-for="article of articles"
         :key="article.slug"

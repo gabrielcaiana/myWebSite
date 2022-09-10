@@ -1,6 +1,6 @@
 <template>
-  <Container>
-    <h1>Projetos</h1>
+  <div class="max-w-[864px] m-auto">
+    <h1 class="text-white text-2xl font-general-medium mt-10">Projetos</h1>
     <section class="max-w-7xl mx-auto mb-12">
       <article>
         <section
@@ -26,7 +26,7 @@
         </div>
       </article>
     </section>
-  </Container>
+  </div>
 </template>
 
 <script lang="ts">
