@@ -1,21 +1,19 @@
 <template>
   <header class="flex justify-center items-center py-24">
-    <div
-      class="flex justify-between items-center justify-center w-[864px] m-auto"
-    >
+    <div class="flex justify-between items-center w-[864px] m-auto">
       <nuxt-link to="/">
         <img width="170" src="/images/logo.svg" alt="Gabriel Caiana" />
       </nuxt-link>
       <ul
         v-if="isMobile.width > 901"
-        class="flex items-center font-general-regular text-white"
+        class="flex items-center font-general-medium text-white"
       >
         <li
           v-for="(menu, index) in menus"
           :key="index"
           class="pl-6 hover:text-purple-700 transition duration-300 ease-in-out"
         >
-          <nuxt-link :to="menu.path" v-text="menu.name"></nuxt-link>
+          <nuxt-link :to="menu.path" v-text="menu.name" />
         </li>
       </ul>
       <HamburguerMenu v-if="isMobile.width < 900" />
@@ -30,9 +28,8 @@ export default Vue.extend({
     return {
       menus: [
         { name: 'Home', path: '/' },
-        { name: 'Sobre', path: '/about' },
         { name: 'Projetos', path: '/projects' },
-        { name: 'Blog', path: '/articles/page' },
+        { name: 'Sobre', path: '/about' },
       ],
 
       window: {

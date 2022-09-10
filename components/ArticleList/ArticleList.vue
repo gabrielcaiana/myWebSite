@@ -1,34 +1,20 @@
 <template>
-  <Container>
-    <ul class="max-w-5xl mx-auto">
+  <div>
+    <ul>
       <li
         v-for="article of articles"
         :key="article.slug"
-        class="mb-12 bg-white bg-opacity-5 p-5 rounded shadow"
+        class="w-[416px] bg-primary-700 p-5 cursor-pointer transform transition duration-500 hover:scale-105"
       >
-        <NuxtLink
-          :to="`/articles/${article.slug}`"
-          class="md:grid md:gap-4 md:grid-cols-2 flex items-center flex flex-col"
-        >
-          <img 
-            v-if="article.img"
-            :src="article.img"
-            :alt="article.title"
-            loading="lazy"
-            class="mb-4 border rounded"
-          />
+        <NuxtLink :to="`/articles/${article.slug}`">
           <div>
-            <h2 class="font-bold text-2xl mb-2">
+            <h2 class="font-bold text-xl mb-2 text-white font-general-medium">
               {{ article.title }}
             </h2>
-            <p class="text-lg">{{ article.description }}</p>
             <p
-              class="font-bold text-blue-500 hover:text-blue-700 transition duration-300 ease-in-out mt-2"
+              class="text-sm line-clamp-4 text-primary-200 font-general-regular"
             >
-              Ler mais<span
-                class="text-blue-500 hover:text-blue-700 transition duration-300 ease-in-out"
-                >&hellip;</span
-              >
+              {{ article.description }}
             </p>
           </div>
         </NuxtLink>
@@ -37,7 +23,7 @@
     <div v-if="total" class="constainer mx-auto my-5 max-w-5xl">
       <Pagination v-if="total > 4" :total="total" />
     </div>
-  </Container>
+  </div>
 </template>
 
 <script lang="ts">
