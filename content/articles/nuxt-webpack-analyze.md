@@ -11,7 +11,7 @@ author:
 
 Sabemos como é importante colocar em produção aplicações que tenham o melhor desempenho possível, porém conforme começamos a desenvolver um projeto adicionamos diversos pacotes para determinadas tarefas e no final isso terá um impacto no desempenho da aplicação, como podemos análisar isso utilizando o nuxtjs?
 
-Recentemente descobri uma forma muito fácil e interativa para mapear e análisar os pacotes que estão sendo utilizados no projeto, podemos criar uma comando simples no `package.json` da seguinte forma:
+Recentemente descobri uma forma muito fácil e interativa para mapear e análisar os pacotes que estão sendo utilizados no projeto, podemos criar um comando simples no `package.json` da seguinte forma:
 
 ```json
 "scripts": {
