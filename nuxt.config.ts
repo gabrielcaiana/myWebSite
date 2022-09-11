@@ -11,29 +11,16 @@ export default {
     },
     meta: [
       ...meta,
-      { charset: 'utf-8' },
+      { charset: 'utf-8', hid: 'charset' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: global.siteDesc || '',
-      },
-      { property: 'og:site_name', content: global.siteName || '' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: global.siteDesc || '',
-      },
-      { property: 'og:image:width', content: '740' },
-      { property: 'og:image:height', content: '300' },
-      { name: 'twitter:site', content: global.siteName || '' },
-      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'apple-mobile-web-app-capable', content: 'yes' },
     ],
     link: [
       {
         hid: 'canonical',
         rel: 'canonical',
-        href: global.siteUrl,
+        href: global.url,
       },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
     ],
@@ -149,7 +136,7 @@ export default {
   ],
 
   sitemap: {
-    hostname: global.siteUrl,
+    hostname: global.url,
     routes() {
       return getRoutes()
     },
