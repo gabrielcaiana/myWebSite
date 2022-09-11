@@ -4,25 +4,14 @@
       v-if="error.statusCode === 404"
       class="flex flex-col items-center justify-center"
     >
-      <h1>Página nāo encontrada!</h1>
+      <h1 class="text-white text-2xl font-general-medium mb-4">
+        Página nāo encontrada!
+      </h1>
 
       <nuxt-link to="/">
         <button
           to="/"
-          class="
-            p-2
-            pl-5
-            pr-5
-            transition-colors
-            duration-700
-            transform
-            bg-indigo-500
-            hover:bg-blue-400
-            text-gray-100 text-lg
-            rounded-lg
-            focus:border-4
-            border-indigo-300
-          "
+          class="p-2 pl-5 pr-5 transition-colors duration-700 transform bg-indigo-500 hover:bg-blue-400 text-gray-100 text-lg rounded-lg focus:border-4 border-indigo-300"
         >
           Ir para o início
         </button>
@@ -44,5 +33,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped></style>
