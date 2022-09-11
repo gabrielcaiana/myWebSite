@@ -11,7 +11,8 @@
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint": "eslint --ext .ts,.js,.vue .",
     "jest": "jest",
-    "jest:watch": "jest --watchAll"
+    "jest:watch": "jest --watchAll",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
@@ -27,6 +28,8 @@
     "vuex-module-decorators": "^1.0.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
     "@nuxt/postcss8": "^1.1.3",
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
@@ -48,6 +51,7 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^7.12.1",
+    "husky": "^8.0.1",
     "jest": "^27.0.5",
     "ngrok": "^4.3.3",
     "postcss": "^8.4.16",
