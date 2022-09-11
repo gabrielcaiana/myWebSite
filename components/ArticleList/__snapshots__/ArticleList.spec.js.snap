@@ -6,48 +6,68 @@ exports[`ArticleList create Snapshot 1`] = `
     class="flex flex-wrap gap-4"
   >
     <li
-      class="w-[300px] md:w-[416px] bg-primary-700 p-5 cursor-pointer transform transition duration-500 hover:scale-105"
+      class="w-[300px] md:w-[416px] bg-primary-700 cursor-pointer transform transition duration-500 hover:scale-105"
     >
       <a>
         <div>
-          <h2
-            class="font-bold text-xl mb-2 text-white font-general-medium"
-          >
-            
-            My jest test
-          
-          </h2>
+          <img
+            alt="My jest test"
+            class="w-full h-64 object-cover mb-4"
+            src="https://miro.medium.com/max/1400/1*qel9XXYWGOh-bcewpFsu8w.png"
+          />
            
-          <p
-            class="text-sm line-clamp-4 text-primary-200 font-general-regular"
+          <div
+            class="px-4 my-4"
           >
+            <h2
+              class="font-bold text-xl mb-2 text-white font-general-medium"
+            >
+              
+              My jest test
             
-            Testing vue component
-          
-          </p>
+            </h2>
+             
+            <p
+              class="text-sm line-clamp-4 text-primary-200 font-general-regular"
+            >
+              
+              Testing vue component
+            
+            </p>
+          </div>
         </div>
       </a>
     </li>
     <li
-      class="w-[300px] md:w-[416px] bg-primary-700 p-5 cursor-pointer transform transition duration-500 hover:scale-105"
+      class="w-[300px] md:w-[416px] bg-primary-700 cursor-pointer transform transition duration-500 hover:scale-105"
     >
       <a>
         <div>
-          <h2
-            class="font-bold text-xl mb-2 text-white font-general-medium"
-          >
-            
-            My jest test 2
-          
-          </h2>
+          <img
+            alt="My jest test 2"
+            class="w-full h-64 object-cover mb-4"
+            src="https://miro.medium.com/max/1400/1*qel9XXYWGOh-bcewpFsu8w.png"
+          />
            
-          <p
-            class="text-sm line-clamp-4 text-primary-200 font-general-regular"
+          <div
+            class="px-4 my-4"
           >
+            <h2
+              class="font-bold text-xl mb-2 text-white font-general-medium"
+            >
+              
+              My jest test 2
             
-            Testing vue component 2
-          
-          </p>
+            </h2>
+             
+            <p
+              class="text-sm line-clamp-4 text-primary-200 font-general-regular"
+            >
+              
+              Testing vue component 2
+            
+            </p>
+          </div>
         </div>
       </a>
     </li>
