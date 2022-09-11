@@ -4,12 +4,12 @@
       <li
         v-for="article of articles"
         :key="article.slug"
-        class="w-[300px] md:w-[416px] bg-primary-700 cursor-pointer transform transition duration-500 hover:scale-105"
+        class="w-full md:w-[416px] bg-primary-700 cursor-pointer rounded-md transform transition duration-500 hover:scale-105"
       >
         <NuxtLink :to="`/articles/${article.slug}`">
           <div>
             <img
-              class="w-full h-64 object-cover mb-4"
+              class="w-full h-64 object-cover mb-4 rounded-t-md"
               :src="article.img"
               :alt="article.title"
             />

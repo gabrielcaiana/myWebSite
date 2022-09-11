@@ -6,13 +6,13 @@ exports[`ArticleList create Snapshot 1`] = `
     class="flex flex-wrap gap-4"
   >
     <li
-      class="w-[300px] md:w-[416px] bg-primary-700 cursor-pointer transform transition duration-500 hover:scale-105"
+      class="w-full md:w-[416px] bg-primary-700 cursor-pointer rounded-md transform transition duration-500 hover:scale-105"
     >
       <a>
         <div>
           <img
             alt="My jest test"
-            class="w-full h-64 object-cover mb-4"
+            class="w-full h-64 object-cover mb-4 rounded-t-md"
             src="https://miro.medium.com/max/1400/1*qel9XXYWGOh-bcewpFsu8w.png"
           />
            
@@ -39,13 +39,13 @@ exports[`ArticleList create Snapshot 1`] = `
       </a>
     </li>
     <li
-      class="w-[300px] md:w-[416px] bg-primary-700 cursor-pointer transform transition duration-500 hover:scale-105"
+      class="w-full md:w-[416px] bg-primary-700 cursor-pointer rounded-md transform transition duration-500 hover:scale-105"
     >
       <a>
         <div>
           <img
             alt="My jest test 2"
-            class="w-full h-64 object-cover mb-4"
+            class="w-full h-64 object-cover mb-4 rounded-t-md"
             src="https://miro.medium.com/max/1400/1*qel9XXYWGOh-bcewpFsu8w.png"
           />
            
