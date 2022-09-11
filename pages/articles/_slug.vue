@@ -1,25 +1,25 @@
 <template>
   <article class="container mx-auto max-w-screen-md p-5">
-    <h1 v-text="article.title"></h1>
-    <p v-text="article.description"></p>
-    <img loading="lazy" :src="article.img" :alt="article.alt" />
-    <p class="py-6">Post atualizado em: {{ formatDate(article.updatedAt) }}</p>
+    <h1
+      class="text-white text-4xl my-8 font-general-medium"
+      v-text="article.title"
+    ></h1>
+    <p
+      class="text-white font-body font-general-regular mx-0"
+      v-text="article.description"
+    ></p>
+    <img
+      class="rounded-md"
+      loading="lazy"
+      :src="article.img"
+      :alt="article.alt"
+    />
 
-    <nav class="my-6">
-      <ul>
-        <li v-for="link of article.toc" :key="link.id">
-          <nuxt-link
-            :class="{ 'py-2': link.depth === 2, 'ml-2 pb-2': link.depth === 3 }"
-            :to="`#${link.id}`"
-            v-text="link.text"
-          ></nuxt-link>
-        </li>
-      </ul>
-    </nav>
+    <nuxt-content class="text-white" :document="article" />
 
-    <nuxt-content :document="article" />
-
-    <author :author="article.author"></author>
+    <p class="text-body text-primary-300 font-general-regular mx-0">
+      Post atualizado em: {{ formatDate(article.updatedAt) }}
+    </p>
 
     <prev-next :prev="prev" :next="next" />
   </article>

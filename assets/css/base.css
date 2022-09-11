@@ -38,3 +38,19 @@ body {
 .exact-active-link {
   @apply text-purple-500;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: GeneralSans-Medium;
+}
+
+p,
+span,
+ul,
+li {
+  font-family: GeneralSans-Regular;
+}

@@ -17,4 +17,12 @@
   .nuxt-content a {
     @apply text-purple-500;
   }
+
+  .nuxt-content p {
+    @apply my-5 mx-0;
+  }
+
+  .nuxt-content h2 {
+    @apply text-2xl;
+  }
 }
