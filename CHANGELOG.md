@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/gabrielcaiana/myWebSite/compare/v1.0.1...v1.1.0) (2022-09-11)
+
+
+### Features
+
+* add new post ([8983a78](https://github.com/gabrielcaiana/myWebSite/commit/8983a7841a0d9c53c2e4acc38e9e7ba0fcb99636))
+
+
+### Bug Fixes
+
+* article ([eb1e7d7](https://github.com/gabrielcaiana/myWebSite/commit/eb1e7d7b0a1b8e788ff11a3554a9e7c78705f81f))
+
 ## [1.0.1](https://github.com/gabrielcaiana/myWebSite/compare/v1.0.0...v1.0.1) (2022-09-11)
 
 
