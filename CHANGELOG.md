@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/gabrielcaiana/myWebSite/compare/v1.0.0...v1.0.1) (2022-09-11)
+
+
+### Bug Fixes
+
+* update meta data ([817dcfe](https://github.com/gabrielcaiana/myWebSite/commit/817dcfe323e7c755a5b994a1243050cf51849e33))
+
 ## 1.0.0 (2022-09-11)
 
 
