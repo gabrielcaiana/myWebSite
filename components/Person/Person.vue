@@ -1,7 +1,18 @@
 <template>
-  <div class="w-56 rounded-full p-2 border-2 border-green-500 cursor-pointer">
-    <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/gabrielcaiana/">
-      <img loading="lazy" class="rounded-full" :src="avatar" alt="Gabriel Caiana" />
+  <div
+    class="w-[160px] md:w-[300px] h-fit md:ml-6 rounded-md p-2 border-2 border-purple-500 cursor-pointer"
+  >
+    <a
+      target="_blank"
+      rel="noopener"
+      href="https://www.linkedin.com/in/gabrielcaiana/"
+    >
+      <img
+        loading="lazy"
+        class="rounded-md"
+        :src="avatar"
+        alt="Gabriel Caiana"
+      />
     </a>
   </div>
 </template>
@@ -14,12 +25,8 @@ export default Vue.extend({
   props: {
     avatar: {
       type: String,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 })
 </script>
-
-<style lang="scss" scoped>
-
-</style>

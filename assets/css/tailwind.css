@@ -3,22 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
-    @apply text-4xl;
-    @apply py-8;
-  }
-  h2 {
-    @apply text-2xl;
-    @apply py-4;
-  }
-  h3 {
-    @apply text-xl;
-    @apply py-4;
-  }
-  p {
-    @apply mb-5;
-    @pply text-base;
-  }
   .nuxt-content-highlight {
     @apply relative;
   }
@@ -31,6 +15,6 @@
   }
 
   .nuxt-content a {
-    @apply text-green-500;
+    @apply text-purple-500;
   }
 }

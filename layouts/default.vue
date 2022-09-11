@@ -1,13 +1,9 @@
 <template>
-  <div>
+  <div class="bg-primary-900 min-h-screen">
     <Header />
-    <transition name="slide" mode="out-in">
+    <transition name="fade" mode="out-in">
       <Nuxt />
     </transition>
     <Footer />
   </div>
 </template>
-
-<script>
-export default {}
-</script>

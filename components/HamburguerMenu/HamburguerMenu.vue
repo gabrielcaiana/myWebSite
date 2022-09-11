@@ -1,5 +1,5 @@
 <template>
-  <div class="menu" :class="[show ? 'fixed right-0 z-10' : '']">
+  <div class="menu" :class="[show ? 'fixed right-0 z-10 -mt-[240px]' : '']">
     <div id="pencet" @click="change">
       <span></span>
       <span></span>
@@ -33,11 +33,12 @@ export default Vue.extend({
   cursor: pointer;
   z-index: 2;
   position: absolute;
+  top: 100px;
   right: 1rem;
 }
 
 #pencet span {
-  background-color: black;
+  background-color: #ffffff;
   width: 2em;
   height: 0.2em;
   margin: 0.26em 0;
