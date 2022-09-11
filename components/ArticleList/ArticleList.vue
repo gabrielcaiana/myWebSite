@@ -4,18 +4,25 @@
       <li
         v-for="article of articles"
         :key="article.slug"
-        class="w-[300px] md:w-[416px] bg-primary-700 p-5 cursor-pointer transform transition duration-500 hover:scale-105"
+        class="w-[300px] md:w-[416px] bg-primary-700 cursor-pointer transform transition duration-500 hover:scale-105"
       >
         <NuxtLink :to="`/articles/${article.slug}`">
           <div>
-            <h2 class="font-bold text-xl mb-2 text-white font-general-medium">
-              {{ article.title }}
-            </h2>
-            <p
-              class="text-sm line-clamp-4 text-primary-200 font-general-regular"
-            >
-              {{ article.description }}
-            </p>
+            <img
+              class="w-full h-64 object-cover mb-4"
+              :src="article.img"
+              :alt="article.title"
+            />
+            <div class="px-4 my-4">
+              <h2 class="font-bold text-xl mb-2 text-white font-general-medium">
+                {{ article.title }}
+              </h2>
+              <p
+                class="text-sm line-clamp-4 text-primary-200 font-general-regular"
+              >
+                {{ article.description }}
+              </p>
+            </div>
           </div>
         </NuxtLink>
       </li>
