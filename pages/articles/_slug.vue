@@ -89,7 +89,7 @@ export default Vue.extend({
         url: `${this.$config.axios.browserBaseURL}/articles/${this.$route.params.slug}`,
         title: this.article.title,
         description: this.article.description,
-        mainImage: this.article.img,
+        img: this.article.img,
       }
 
       return getSiteMeta(metaData)
