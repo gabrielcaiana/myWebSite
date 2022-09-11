@@ -1,28 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ArticleList create Snapshot 1`] = `
-<div
-  class="container content-area mx-auto my-9 px-6"
->
+<div>
   <ul
-    class="max-w-5xl mx-auto"
+    class="flex flex-wrap gap-4"
   >
     <li
-      class="mb-12 bg-white bg-opacity-5 p-5 rounded shadow"
+      class="w-[300px] md:w-[416px] bg-primary-700 p-5 cursor-pointer transform transition duration-500 hover:scale-105"
     >
-      <a
-        class="md:grid md:gap-4 md:grid-cols-2 flex items-center flex flex-col"
-      >
-        <img
-          alt="My jest test"
-          class="mb-4 border rounded"
-          loading="lazy"
-          src="https://miro.medium.com/max/1400/1*qel9XXYWGOh-bcewpFsu8w.png"
-        />
-         
+      <a>
         <div>
           <h2
-            class="font-bold text-2xl mb-2"
+            class="font-bold text-xl mb-2 text-white font-general-medium"
           >
             
             My jest test
@@ -30,41 +19,22 @@ exports[`ArticleList create Snapshot 1`] = `
           </h2>
            
           <p
-            class="text-lg"
-          >
-            Testing vue component
-          </p>
-           
-          <p
-            class="font-bold text-blue-500 hover:text-blue-700 transition duration-300 ease-in-out mt-2"
+            class="text-sm line-clamp-4 text-primary-200 font-general-regular"
           >
             
-            Ler mais
-            <span
-              class="text-blue-500 hover:text-blue-700 transition duration-300 ease-in-out"
-            >
-              …
-            </span>
+            Testing vue component
+          
           </p>
         </div>
       </a>
     </li>
     <li
-      class="mb-12 bg-white bg-opacity-5 p-5 rounded shadow"
+      class="w-[300px] md:w-[416px] bg-primary-700 p-5 cursor-pointer transform transition duration-500 hover:scale-105"
     >
-      <a
-        class="md:grid md:gap-4 md:grid-cols-2 flex items-center flex flex-col"
-      >
-        <img
-          alt="My jest test 2"
-          class="mb-4 border rounded"
-          loading="lazy"
-          src="https://miro.medium.com/max/1400/1*qel9XXYWGOh-bcewpFsu8w.png"
-        />
-         
+      <a>
         <div>
           <h2
-            class="font-bold text-2xl mb-2"
+            class="font-bold text-xl mb-2 text-white font-general-medium"
           >
             
             My jest test 2
@@ -72,21 +42,11 @@ exports[`ArticleList create Snapshot 1`] = `
           </h2>
            
           <p
-            class="text-lg"
-          >
-            Testing vue component 2
-          </p>
-           
-          <p
-            class="font-bold text-blue-500 hover:text-blue-700 transition duration-300 ease-in-out mt-2"
+            class="text-sm line-clamp-4 text-primary-200 font-general-regular"
           >
             
-            Ler mais
-            <span
-              class="text-blue-500 hover:text-blue-700 transition duration-300 ease-in-out"
-            >
-              …
-            </span>
+            Testing vue component 2
+          
           </p>
         </div>
       </a>
