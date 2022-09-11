@@ -1,6 +1,6 @@
 <template>
   <transition name="slide">
-    <nav v-if="show" class="menu-mobile" @click="close">
+    <nav v-if="show" class="menu-mobile bg-primary-900" @click="close">
       <nuxt-link
         v-for="menu in menus"
         :key="menu.name"
@@ -27,9 +27,8 @@ export default Vue.extend({
     return {
       menus: [
         { name: 'Home', path: '/' },
-        { name: 'Sobre', path: '/about' },
         { name: 'Projetos', path: '/projects' },
-        { name: 'Blog', path: '/articles' },
+        { name: 'Carreira', path: '/career' },
       ],
     }
   },
@@ -48,7 +47,6 @@ export default Vue.extend({
   width: 250px;
   position: absolute;
   top: 0;
-  background-color: #243746;
   right: 0;
   display: flex;
   flex-direction: column;

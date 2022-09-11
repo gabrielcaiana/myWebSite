@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-[864px] m-auto">
+  <div class="max-w-[864px] m-auto p-6 md:p-0">
     <h1 class="text-white text-2xl font-general-medium mt-10">Projetos</h1>
     <section class="max-w-7xl mx-auto mb-12">
       <article>
