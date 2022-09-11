@@ -5,7 +5,7 @@
       v-text="article.title"
     ></h1>
     <p
-      class="text-white font-body font-general-regular mx-0"
+      class="text-white font-body font-general-regular mx-0 mb-6"
       v-text="article.description"
     ></p>
     <img
@@ -21,7 +21,7 @@
       Post atualizado em: {{ formatDate(article.updatedAt) }}
     </p>
 
-    <prev-next :prev="prev" :next="next" />
+    <prev-next class="text-white mt-10" :prev="prev" :next="next" />
   </article>
 </template>
 
