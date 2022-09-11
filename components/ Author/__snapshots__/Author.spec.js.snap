@@ -2,14 +2,14 @@
 
 exports[`Author create Snapshot 1`] = `
 <div
-  class="w-full px-2 xs:mb-6 md:mb-12 article-card"
+  class="w-full px-2 xs:mb-6 md:mb-12 article-card mt-10"
 >
   <a
     class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
   >
     <img
       alt="Gabriel Caiana"
-      class="h-48 xxlmin:w-1/2 xxlmax:w-full object-cover"
+      class="h-32 xxlmin:w-1/2 xxlmax:w-full object-cover rounded-md"
       loading="lazy"
       src="images/me.jpg"
     />
@@ -17,20 +17,14 @@ exports[`Author create Snapshot 1`] = `
     <div
       class="flex flex-col m-4"
     >
-      <h4
-        class="font-semibold"
-      >
-        Author
-      </h4>
-       
       <p
-        class="author-name"
+        class="font-general-medium text-white"
       >
         Gabriel Caiana
       </p>
        
       <p
-        class="author-bio"
+        class="font-general-regular text-white"
       >
         I\`am front-end developer
       </p>
