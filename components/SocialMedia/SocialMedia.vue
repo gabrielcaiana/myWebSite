@@ -40,7 +40,7 @@ export default {
   props: {
     socialMedia: {
       type: Array,
-      required: true,
+      default: () => [],
     },
   },
 }
