@@ -10,6 +10,7 @@
       <nuxt-img
         :src="avatar"
         placeholder="Gabriel Caiana"
+        alt="Gabriel Caiana"
         class="rounded-md"
         loading="lazy"
         fit="cover"

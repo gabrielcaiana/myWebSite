@@ -10,6 +10,7 @@
         class="h-full object-cover"
         :src="card.cover"
         :placeholder="card.name"
+        :alt="card.name"
         loading="lazy"
         fit="cover"
         quality="80"

@@ -12,6 +12,7 @@
       class="rounded-md"
       :src="article.img"
       :placeholder="article.alt"
+      :alt="article.alt"
       loading="lazy"
       fit="cover"
       quality="80"

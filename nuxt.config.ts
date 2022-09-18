@@ -12,6 +12,11 @@ export default {
     },
     meta: [
       ...meta,
+      {
+        hid: 'description',
+        name: 'description',
+        content: global.description,
+      },
       { charset: 'utf-8', hid: 'charset' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'format-detection', content: 'telephone=no' },
@@ -139,7 +144,7 @@ export default {
 
   robots: {
     UserAgent: '*',
-    Disallow: '/',
+    Allow: '*',
   },
 
   build: {

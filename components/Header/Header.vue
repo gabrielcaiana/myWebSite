@@ -6,6 +6,7 @@
           width="170"
           src="/logo.svg"
           placeholder="Gabriel Caiana"
+          alt="Gabriel Caiana"
           loading="lazy"
           fit="cover"
           quality="80"

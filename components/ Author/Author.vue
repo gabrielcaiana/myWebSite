@@ -8,6 +8,7 @@
         v-if="author.image"
         :src="author.image"
         :placeholder="author.name"
+        :alt="author.name"
         loading="lazy"
         fit="cover"
         quality="80"
