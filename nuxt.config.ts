@@ -17,6 +17,12 @@ export default {
         name: 'description',
         content: global.description,
       },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content:
+          'vuejs, nuxt, javascript, tutorials, development, software frontend, front-end, gabriel, caiana, desenvolvedor web, desenvolvedor, developer',
+      },
       { charset: 'utf-8', hid: 'charset' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'format-detection', content: 'telephone=no' },
