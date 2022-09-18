@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/gabrielcaiana/myWebSite/compare/v1.1.0...v1.2.0) (2022-09-18)
+
+
+### Features
+
+* add nuxt images ([a8db7dc](https://github.com/gabrielcaiana/myWebSite/commit/a8db7dc19e091edca25dec2728a9e5e78cf8f649))
+
+
+### Bug Fixes
+
+* images path ([b69adbb](https://github.com/gabrielcaiana/myWebSite/commit/b69adbb5f54ff529bc39799b15febb08d05a5967))
+
 ## [1.1.0](https://github.com/gabrielcaiana/myWebSite/compare/v1.0.1...v1.1.0) (2022-09-11)
 
 
