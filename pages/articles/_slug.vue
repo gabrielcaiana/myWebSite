@@ -8,7 +8,16 @@
       class="text-white font-body font-general-regular mx-0 mb-6"
       v-text="article.description"
     ></p>
-    <nuxt-img class="rounded-md" :src="article.img" :alt="article.alt" />
+    <nuxt-img
+      class="rounded-md"
+      :src="article.img"
+      :placeholder="article.alt"
+      :alt="article.alt"
+      loading="lazy"
+      fit="cover"
+      quality="80"
+      format="png"
+    />
 
     <nuxt-content class="text-white" :document="article" />
 

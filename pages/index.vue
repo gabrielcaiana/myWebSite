@@ -9,7 +9,7 @@
       >
         <h1 class="text-white text-2xl font-general-medium">Gabriel Caiana</h1>
         <span class="text-medium font-general-medium text-primary-100 mb-3"
-          >Desenvolvedor frontend e entusiasta de design.</span
+          ><strong>Desenvolvedor frontend</strong> e entusiasta de design.</span
         >
         <p class="text-primary-200 font-general-regular">
           {{ user.description }}

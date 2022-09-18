@@ -7,7 +7,16 @@
       rel="noopener"
       href="https://www.linkedin.com/in/gabrielcaiana/"
     >
-      <nuxt-img :src="avatar" alt="Gabriel Caiana" class="rounded-md" />
+      <nuxt-img
+        :src="avatar"
+        placeholder="Gabriel Caiana"
+        alt="Gabriel Caiana"
+        class="rounded-md"
+        loading="lazy"
+        fit="cover"
+        quality="80"
+        format="png"
+      />
     </a>
   </div>
 </template>

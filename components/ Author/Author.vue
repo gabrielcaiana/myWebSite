@@ -7,7 +7,12 @@
       <nuxt-img
         v-if="author.image"
         :src="author.image"
+        :placeholder="author.name"
         :alt="author.name"
+        loading="lazy"
+        fit="cover"
+        quality="80"
+        format="png"
         class="h-32 xxlmin:w-1/2 xxlmax:w-full object-cover rounded-md"
       />
       <div class="flex flex-col m-4">
