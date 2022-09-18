@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.1](https://github.com/gabrielcaiana/myWebSite/compare/v1.2.0...v1.2.1) (2022-09-18)
+
+
+### Bug Fixes
+
+* images bug render ([f1966f6](https://github.com/gabrielcaiana/myWebSite/commit/f1966f6fad1944de411f69380e620deff6f23046))
+* robots and meta description ([fadb894](https://github.com/gabrielcaiana/myWebSite/commit/fadb894a11be15559974bfc779b8739677136e93))
+
 ## [1.2.0](https://github.com/gabrielcaiana/myWebSite/compare/v1.1.0...v1.2.0) (2022-09-18)
 
 

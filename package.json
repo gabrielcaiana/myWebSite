@@ -1,7 +1,7 @@
 {
   "name": "my-website",
   "author": "Gabriel Caiana Guedes",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private": true,
   "scripts": {
     "dev": "nuxt",
