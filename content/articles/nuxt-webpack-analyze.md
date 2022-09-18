@@ -1,7 +1,7 @@
 ---
 title: Como adicionar a análise de pacotes do webpack em seu projeto nuxt
 description: Visualize o tamanho dos arquivos de saída do webpack com um mapa de árvore interativo dentro do seu projeto com nuxtjs.
-img: /images/posts/webpack-analyzer/webpack-analyzer.png
+img: /webpack-analyzer.png
 alt: Visualize o tamanho dos arquivos de saīda do webpack com um mapa de árvore interativo com zoom.
 author:
   name: Gabriel Caiana
@@ -39,7 +39,7 @@ com isso o webpack analyzer deve ser inicializado em seu navegador e com isso po
 
 Temos também uma barra a esquerda que permite que você escolha quais pedaços mostrar com os seus devidos tamanhos. podemos ver um exemplo disso na imagem abaixo:
 
-![imagem dos chunks do projeto](/images/posts/webpack-analyzer/chunks.png)
+![imagem dos chunks do projeto](/chunks.png)
 
 Você também pode clicar duas vezes nas caixas, passar o mouse sobre elas para obter mais detalhes e clicar com o botão direito em um pedaço para ocultá-lo facilmente ou para ocultar todos os outros pedaços.
 
