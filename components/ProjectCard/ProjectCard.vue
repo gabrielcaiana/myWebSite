@@ -6,9 +6,8 @@
     <article
       class="relative w-auto h-64 bg-cover bg-center group overflow-hidden shadow-lg hover:shadow-2xl rounded-t-lg transition duration-300 ease-in-out"
     >
-      <img
+      <nuxt-img
         class="h-full object-cover"
-        loading="lazy"
         :src="card.cover"
         :alt="card.name"
       />

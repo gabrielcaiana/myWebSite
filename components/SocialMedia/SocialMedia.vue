@@ -5,7 +5,13 @@
       :key="index"
       class="cursor-pointer"
     >
-      <a :href="icon.url" target="_blank" rel="noopener">
+      <a
+        :href="icon.url"
+        :title="icon.name"
+        :aria-label="icon.name"
+        target="_blank"
+        rel="noopener"
+      >
         <component :is="`${icon.name}`" />
       </a>
     </li>
@@ -34,7 +40,7 @@ export default {
   props: {
     socialMedia: {
       type: Array,
-      required: true,
+      default: () => [],
     },
   },
 }

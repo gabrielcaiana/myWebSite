@@ -8,7 +8,7 @@
         <NuxtLink
           :to="{ name: 'articles-slug', params: { slug: article.slug } }"
         >
-          <img loading="lazy" :src="article.img" :alt="article.alt" />
+          <nuxt-img :src="article.img" :alt="article.alt" />
           <div>
             <h2>{{ article.title }}</h2>
             <p>{{ article.description }}</p>

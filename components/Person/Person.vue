@@ -7,12 +7,7 @@
       rel="noopener"
       href="https://www.linkedin.com/in/gabrielcaiana/"
     >
-      <img
-        loading="lazy"
-        class="rounded-md"
-        :src="avatar"
-        alt="Gabriel Caiana"
-      />
+      <nuxt-img :src="avatar" alt="Gabriel Caiana" class="rounded-md" />
     </a>
   </div>
 </template>
