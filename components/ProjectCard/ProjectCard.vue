@@ -9,7 +9,11 @@
       <nuxt-img
         class="h-full object-cover"
         :src="card.cover"
-        :alt="card.name"
+        :placeholder="card.name"
+        loading="lazy"
+        fit="cover"
+        quality="80"
+        format="png"
       />
       <div
         class="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out"

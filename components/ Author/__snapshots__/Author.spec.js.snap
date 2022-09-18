@@ -8,8 +8,12 @@ exports[`Author create Snapshot 1`] = `
     class="flex transition-shadow duration-150 ease-in-out shadow-sm hover:shadow-md xxlmax:flex-col"
   >
     <nuxt-img
-      alt="Gabriel Caiana"
       class="h-32 xxlmin:w-1/2 xxlmax:w-full object-cover rounded-md"
+      fit="cover"
+      format="png"
+      loading="lazy"
+      placeholder="Gabriel Caiana"
+      quality="80"
       src="images/me.jpg"
     />
      

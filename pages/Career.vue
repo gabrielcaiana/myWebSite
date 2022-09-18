@@ -10,7 +10,11 @@
         <nuxt-img
           class="w-24 h-24 rounded-lg mb-8 cursor-pointer"
           :src="job.image"
-          :alt="job.name"
+          :placeholder="job.name"
+          loading="lazy"
+          fit="cover"
+          quality="80"
+          format="png"
         />
 
         <div class="m-0 md:mx-4">

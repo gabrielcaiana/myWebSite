@@ -2,7 +2,15 @@
   <header class="flex justify-center items-center py-24 px-8">
     <div class="flex justify-between items-center w-[864px] m-auto">
       <nuxt-link to="/">
-        <nuxt-img width="170" src="/logo.svg" alt="Gabriel Caiana" />
+        <nuxt-img
+          width="170"
+          src="/logo.svg"
+          placeholder="Gabriel Caiana"
+          loading="lazy"
+          fit="cover"
+          quality="80"
+          format="png"
+        />
       </nuxt-link>
       <ul
         v-if="isMobile.width > 901"
