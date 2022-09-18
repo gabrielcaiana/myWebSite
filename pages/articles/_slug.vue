@@ -8,12 +8,7 @@
       class="text-white font-body font-general-regular mx-0 mb-6"
       v-text="article.description"
     ></p>
-    <img
-      class="rounded-md"
-      loading="lazy"
-      :src="article.img"
-      :alt="article.alt"
-    />
+    <nuxt-img class="rounded-md" :src="article.img" :alt="article.alt" />
 
     <nuxt-content class="text-white" :document="article" />
 

@@ -57,6 +57,7 @@ export default {
     '@nuxt/typescript-build',
     '@nuxt/postcss8',
     '@/modules/ngrok',
+    '@nuxt/image',
   ],
 
   modules: [
