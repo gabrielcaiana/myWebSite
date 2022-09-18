@@ -68,12 +68,8 @@ export default {
     '@nuxtjs/google-analytics',
     '@nuxtjs/proxy',
     '@nuxtjs/pwa',
-    '@nuxtjs/gtm',
+    '@nuxtjs/robots',
   ],
-
-  gtm: {
-    id: process.env.GOOGLE_TAG_MANAGER_ID,
-  },
 
   googleAnalytics: {
     id: process.env.GOOGLE_ANALYTICS_ID,
@@ -105,9 +101,6 @@ export default {
     algolia: {
       appId: process.env.APP_ID,
       apiKey: process.env.API_KEY,
-    },
-    gtm: {
-      id: process.env.GOOGLE_TAG_MANAGER_ID,
     },
   },
 
@@ -141,6 +134,11 @@ export default {
     routes() {
       return getRoutes()
     },
+  },
+
+  robots: {
+    UserAgent: '*',
+    Disallow: '/',
   },
 
   build: {
