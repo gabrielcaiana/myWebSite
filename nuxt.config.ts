@@ -150,7 +150,6 @@ export default {
 
   robots: {
     UserAgent: '*',
-    Allow: '/',
   },
 
   build: {
