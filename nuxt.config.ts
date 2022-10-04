@@ -148,10 +148,6 @@ export default {
     },
   },
 
-  robots: {
-    UserAgent: '*',
-  },
-
   build: {
     postcss: {
       plugins: {
