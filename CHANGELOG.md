@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/gabrielcaiana/myWebSite/compare/v1.2.1...v1.3.0) (2022-10-04)
+
+
+### Features
+
+* remove project link ([b8d7720](https://github.com/gabrielcaiana/myWebSite/commit/b8d772049d3a3456f2a26b46bc8d7d24d02ca38f))
+
+
+### Bug Fixes
+
+* robots ([ee25c32](https://github.com/gabrielcaiana/myWebSite/commit/ee25c3250d9b32bd9bf7aef845ac2c1256a7153b))
+
 ## [1.2.1](https://github.com/gabrielcaiana/myWebSite/compare/v1.2.0...v1.2.1) (2022-09-18)
 
 
