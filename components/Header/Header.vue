@@ -37,7 +37,6 @@ export default Vue.extend({
     return {
       menus: [
         { name: 'Home', path: '/' },
-        { name: 'Projetos', path: '/projects' },
         { name: 'Carreira', path: '/career' },
       ],
 
