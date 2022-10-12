@@ -16,6 +16,8 @@
         fit="cover"
         quality="80"
         format="png"
+        width="auto"
+        height="auto"
       />
     </a>
   </div>
