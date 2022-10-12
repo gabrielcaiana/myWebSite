@@ -2,7 +2,7 @@ name: CI
 on:
   pull_request:
     branches:
-      - main
+      - master
 jobs:
   lighthouse:
     name: Lighthouse CI
@@ -21,7 +21,7 @@ jobs:
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
 
-      - name: lighthouse desktop audit
+      - name: lighthouse desktop auditclear
         run: yarn lhci:desktop
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
