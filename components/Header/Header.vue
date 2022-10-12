@@ -4,6 +4,7 @@
       <nuxt-link to="/">
         <nuxt-img
           width="170"
+          height="auto"
           src="/logo.svg"
           placeholder="Gabriel Caiana"
           alt="Gabriel Caiana"

@@ -12,7 +12,9 @@
     "lint": "eslint --ext .ts,.js,.vue .",
     "jest": "jest",
     "jest:watch": "jest --watchAll",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lhci:mobile": "lhci autorun",
+    "lhci:desktop": "lhci autorun --collect.settings.preset=desktop"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
@@ -30,6 +32,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@lhci/cli": "^0.9.0",
     "@nuxt/image": "^0.7.1",
     "@nuxt/postcss8": "^1.1.3",
     "@nuxt/types": "^2.15.8",
